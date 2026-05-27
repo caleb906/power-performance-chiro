@@ -1,0 +1,40 @@
+{
+  "siteName": "Power Performance Chiro",
+  "siteNameLegal": "Power Performance Chiropractic",
+  "slug": "power-performance-chiro",
+  "domain": "powerperformancechiro.com",
+  "industry": "Sports chiropractic",
+  "tagline": "Bend's chiropractor for athletes, active adults, and people who work with their hands.",
+  "description": "Performance-focused chiropractic care in Bend, OR. ART, soft tissue, and rehab for athletes, active adults, and anyone tired of living in pain.",
+  "phoneDisplay": "(458) 600-9345",
+  "phoneTel": "+14586009345",
+  "phoneSchema": "+1-458-600-9345",
+  "email": "info@powerperformancechiro.com",
+  "hours": "Mon/Wed/Thu 9a-1p, 3-6p · Tue 12-6p · Fri 8a-12p",
+  "logoUrl": "https://images.squarespace-cdn.com/content/v1/67869c6fdab56c582a307d44/d8148a6d-4eda-4d6b-8e66-7a6ddb53e4f8/PPC_Primary+Logo+CLR.png?format=1500w",
+  "web3formsKey": "PLACEHOLDER-REPLACE-BEFORE-LAUNCH",
+  "colors": {
+    "_note": "Matched to PPC's teal Squarespace palette. Caleb to confirm vs. brand guide.",
+    "primary": "#0EA5B7",
+    "primaryDark": "#0A7E8C",
+    "primaryRgb": "14,165,183",
+    "bg": "#0B0F14",
+    "bgRgb": "11,15,20",
+    "surface": "#11161D",
+    "surface2": "#1A222D",
+    "text": "#F5F7FA"
+  },
+  "fonts": {
+    "display": "Oswald",
+    "displayUrl": "Oswald:wght@500;600;700",
+    "body": "Inter",
+    "bodyUrl": "Inter:wght@400;500;600"
+  },
+  "github": {
+    "owner": "caleb906",
+    "private": false
+  },
+  "vercel": {
+    "scope": "caleb-hoffmanns-projects"
+  }
+}

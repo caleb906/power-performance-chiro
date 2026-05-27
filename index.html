@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Power Performance Chiro — Coming Soon</title>
+  <meta name="description" content="Performance-focused chiropractic care in Bend, OR. ART, soft tissue, and rehab for athletes, active adults, and anyone tired of living in pain.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --primary:#0EA5B7;
+      --bg:#0B0F14;
+      --surface:#11161D;
+      --text:#F5F7FA;
+      --text-dim:rgba(255,255,255,0.55);
+      --display:'Oswald',sans-serif;
+      --body:'Inter',sans-serif;
+    }
+    body{
+      font-family:var(--body);
+      background:var(--bg);
+      color:var(--text);
+      min-height:100vh;
+      display:grid;
+      place-items:center;
+      padding:24px;
+      overflow:hidden;
+      position:relative;
+    }
+    body::before{
+      content:'';
+      position:fixed;
+      inset:-20%;
+      background:
+        radial-gradient(circle at 20% 30%, rgba(14,165,183,0.18), transparent 45%),
+        radial-gradient(circle at 80% 70%, rgba(14,165,183,0.10), transparent 50%);
+      filter:blur(40px);
+      pointer-events:none;
+    }
+    body::after{
+      content:'';
+      position:fixed;
+      inset:0;
+      opacity:0.04;
+      pointer-events:none;
+      background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+    .card{
+      position:relative;
+      z-index:1;
+      background:rgba(255,255,255,0.03);
+      border:1px solid rgba(255,255,255,0.08);
+      border-radius:24px;
+      padding:56px 48px;
+      max-width:560px;
+      width:100%;
+      text-align:center;
+      backdrop-filter:blur(20px);
+    }
+    .pill{
+      display:inline-block;
+      font-size:11px;
+      font-weight:600;
+      letter-spacing:0.14em;
+      text-transform:uppercase;
+      color:var(--primary);
+      background:rgba(14,165,183,0.12);
+      border:1px solid rgba(14,165,183,0.25);
+      padding:6px 14px;
+      border-radius:100px;
+      margin-bottom:24px;
+    }
+    h1{
+      font-family:var(--display);
+      font-size:clamp(40px,6vw,64px);
+      letter-spacing:0.02em;
+      line-height:1;
+      margin-bottom:16px;
+    }
+    p{
+      font-size:16px;
+      color:var(--text-dim);
+      line-height:1.7;
+      max-width:420px;
+      margin:0 auto 32px;
+    }
+    .contact{
+      display:flex;
+      gap:12px;
+      justify-content:center;
+      flex-wrap:wrap;
+      padding-top:24px;
+      border-top:1px solid rgba(255,255,255,0.08);
+    }
+    .contact a{
+      color:var(--text-dim);
+      text-decoration:none;
+      font-size:14px;
+      font-weight:500;
+      transition:color 0.15s ease;
+    }
+    .contact a:hover{color:var(--primary)}
+    .divider{color:rgba(255,255,255,0.15)}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="pill">Launching Soon</div>
+    <h1>Power Performance Chiro</h1>
+    <p>Bend's chiropractor for athletes, active adults, and people who work with their hands. — new site in progress. In the meantime, reach out anytime.</p>
+    <div class="contact">
+      <a href="tel:+14586009345">(458) 600-9345</a>
+      <span class="divider">·</span>
+      <a href="mailto:info@powerperformancechiro.com">info@powerperformancechiro.com</a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "Power Performance Chiro",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Performance-focused chiropractic care in Bend, OR. ART, soft tissue, and rehab for athletes, active adults, and anyone tired of living in pain.",
+  "type": "module",
+  "scripts": {
+    "serve": "node serve.mjs",
+    "screenshot": "node screenshot.mjs"
+  },
+  "dependencies": {
+    "puppeteer": "^24.40.0"
+  }
+}
