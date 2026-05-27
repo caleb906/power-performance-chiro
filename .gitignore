@@ -10,3 +10,5 @@ screencapture-*
 Brand Assets/
 brand_assets/*
 !brand_assets/README.md
+
+.vercel
