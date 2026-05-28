@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why SEO + Story Matter | Power Performance Chiropractic Site Review</title>
+  <meta name="description" content="A walkthrough of why SEO matters, why story matters, and how the new Power Performance Chiropractic homepage uses both.">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@500;600;700;800&family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #5C9A40;
+      --green-deep: #2E5F22;
+      --green-soft: #ECF2E5;
+      --teal: #1F6F6E;
+      --lime: #D4F26B;
+      --paper: #F3EEE2;
+      --paper-warm: #E8DFCB;
+      --ink: #1F0F1C;
+      --ink-2: #2E1A2A;
+      --ink-mid: rgba(31,15,28,0.66);
+      --ink-dim: rgba(31,15,28,0.42);
+      --line: rgba(31,15,28,0.12);
+      --font-display: 'Oxanium', system-ui, sans-serif;
+      --font-body: 'Raleway', system-ui, sans-serif;
+      --ease: cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-body); background: var(--paper); color: var(--ink);
+      -webkit-font-smoothing: antialiased; line-height: 1.55;
+    }
+    body::before {
+      content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 9999;
+      opacity: 0.08; mix-blend-mode: multiply;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 600 600' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+
+    /* slide layout */
+    .slide {
+      min-height: 100vh; padding: 80px 6vw;
+      display: flex; flex-direction: column; justify-content: center;
+      position: relative;
+      border-bottom: 1px solid var(--line);
+    }
+    .slide-num {
+      position: absolute; top: 36px; left: 6vw;
+      font-family: var(--font-display); font-weight: 600;
+      font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--ink-dim);
+    }
+    .slide-num strong { color: var(--ink); font-weight: 700; }
+    .slide-marker {
+      position: absolute; top: 36px; right: 6vw;
+      font-family: var(--font-display); font-weight: 600;
+      font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--ink-dim);
+    }
+    .slide-marker .dot {
+      display: inline-block; width: 8px; height: 8px; border-radius: 50%;
+      background: var(--green); margin-right: 8px; vertical-align: middle;
+    }
+
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 12px;
+      font-family: var(--font-display); font-weight: 600;
+      font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--green-deep); margin-bottom: 22px;
+    }
+    .eyebrow::before {
+      content: ''; width: 28px; height: 1.5px; background: var(--green); border-radius: 2px;
+    }
+
+    h1, h2, h3 {
+      font-family: var(--font-display); font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.005em; line-height: 1.02;
+    }
+    h1 { font-size: clamp(48px, 9vw, 140px); }
+    h2 { font-size: clamp(38px, 6.5vw, 88px); line-height: 1.04; }
+    h3 { font-size: clamp(20px, 2.2vw, 28px); }
+    .it { color: var(--green-deep); }
+    .lime { color: var(--lime); }
+
+    p { font-size: clamp(16px, 1.4vw, 19px); color: var(--ink-mid); max-width: 64ch; line-height: 1.55; }
+    p + p { margin-top: 12px; }
+    p.lead { font-size: clamp(20px, 2vw, 26px); color: var(--ink); font-weight: 500; max-width: 24ch; }
+
+    /* cover slide */
+    .cover { background: var(--ink); color: var(--paper); border-bottom: 0; }
+    .cover::after {
+      content: ''; position: absolute; inset: 0; pointer-events: none;
+      background: radial-gradient(circle at 80% 20%, rgba(212,242,107,0.15), transparent 55%),
+                  radial-gradient(circle at 15% 85%, rgba(46,95,34,0.45), transparent 60%);
+    }
+    .cover > * { position: relative; z-index: 1; }
+    .cover .slide-num, .cover .slide-marker { color: rgba(242,237,223,0.5); }
+    .cover .slide-num strong, .cover .slide-marker { color: var(--paper); }
+    .cover .eyebrow { color: var(--lime); }
+    .cover .eyebrow::before { background: var(--lime); }
+    .cover h1 { color: var(--paper); margin-bottom: 24px; }
+    .cover h1 .lime { color: var(--lime); }
+    .cover-meta {
+      margin-top: 48px; padding-top: 28px;
+      border-top: 1px solid rgba(242,237,223,0.18);
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 800px;
+    }
+    .cover-meta-item .l { font-family: var(--font-display); font-weight: 600; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(242,237,223,0.55); margin-bottom: 8px; }
+    .cover-meta-item .v { font-family: var(--font-display); font-weight: 700; font-size: 16px; color: var(--paper); text-transform: uppercase; letter-spacing: 0.02em; }
+
+    /* dark slides */
+    .dark {
+      background: var(--ink); color: var(--paper);
+      border-bottom-color: var(--ink);
+    }
+    .dark .slide-num, .dark .slide-marker { color: rgba(242,237,223,0.4); }
+    .dark .slide-num strong, .dark .slide-marker .dot + * { color: var(--paper); }
+    .dark .eyebrow { color: var(--lime); }
+    .dark .eyebrow::before { background: var(--lime); }
+    .dark h1, .dark h2, .dark h3 { color: var(--paper); }
+    .dark .it { color: var(--lime); }
+    .dark p { color: rgba(242,237,223,0.78); }
+    .dark p.lead { color: var(--paper); }
+
+    /* two-col layout helper */
+    .two {
+      display: grid; grid-template-columns: 1fr;
+      gap: 48px; align-items: start;
+    }
+    @media (min-width: 980px) {
+      .two { grid-template-columns: 1.05fr 0.95fr; gap: 80px; }
+    }
+
+    /* stat cards */
+    .stats {
+      display: grid; gap: 16px;
+      grid-template-columns: 1fr;
+      margin-top: 32px;
+    }
+    @media (min-width: 720px) { .stats { grid-template-columns: repeat(3, 1fr); } }
+    .stat {
+      padding: 28px 26px;
+      background: var(--paper-warm); border-radius: 18px;
+      border: 1px solid var(--line);
+    }
+    .dark .stat { background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.10); }
+    .stat .n {
+      font-family: var(--font-display); font-weight: 700;
+      font-size: clamp(38px, 4.5vw, 58px); line-height: 1; letter-spacing: 0.005em;
+      color: var(--ink); margin-bottom: 14px;
+    }
+    .dark .stat .n { color: var(--lime); }
+    .stat .l {
+      font-family: var(--font-display); font-weight: 600;
+      font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--ink-dim); margin-bottom: 8px;
+    }
+    .dark .stat .l { color: rgba(242,237,223,0.55); }
+    .stat .d { font-size: 14px; color: var(--ink-mid); line-height: 1.5; }
+    .dark .stat .d { color: rgba(242,237,223,0.78); }
+
+    /* compare blocks */
+    .compare {
+      display: grid; grid-template-columns: 1fr; gap: 16px;
+      margin-top: 32px;
+    }
+    @media (min-width: 900px) { .compare { grid-template-columns: 1fr 1fr; gap: 24px; } }
+    .compare-card {
+      padding: 28px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: var(--paper-warm);
+    }
+    .compare-card.bad {
+      background: rgba(31,15,28,0.04);
+      border-style: dashed;
+    }
+    .compare-card.good {
+      background: var(--ink); color: var(--paper);
+      border-color: var(--ink);
+    }
+    .compare-card .tag {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: var(--font-display); font-weight: 700;
+      font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    .compare-card.bad .tag { color: #B85C5C; }
+    .compare-card.bad .tag::before { content: '✕'; font-size: 14px; }
+    .compare-card.good .tag { color: var(--lime); }
+    .compare-card.good .tag::before { content: '✓'; font-size: 14px; }
+    .compare-card .quote {
+      font-family: var(--font-display); font-weight: 700;
+      font-size: clamp(20px, 2vw, 26px); line-height: 1.2; letter-spacing: 0.005em;
+      text-transform: uppercase;
+    }
+    .compare-card.bad .quote { color: rgba(31,15,28,0.55); }
+    .compare-card.good .quote { color: var(--paper); }
+    .compare-card .note {
+      margin-top: 14px; padding-top: 14px;
+      border-top: 1px solid var(--line);
+      font-size: 13px; color: var(--ink-mid); line-height: 1.55;
+    }
+    .compare-card.good .note { color: rgba(242,237,223,0.7); border-top-color: rgba(255,255,255,0.14); }
+
+    /* numbered framework */
+    .frame-list {
+      display: grid; gap: 14px; margin-top: 28px;
+      counter-reset: f;
+    }
+    .frame-item {
+      padding: 22px 26px;
+      background: var(--paper-warm);
+      border-radius: 14px; border: 1px solid var(--line);
+      counter-increment: f;
+      display: grid; grid-template-columns: auto 1fr; gap: 22px; align-items: baseline;
+    }
+    .dark .frame-item { background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.10); }
+    .frame-item::before {
+      content: counter(f, decimal-leading-zero);
+      font-family: var(--font-display); font-weight: 700;
+      font-size: 32px; line-height: 1; letter-spacing: 0.005em;
+      color: var(--green);
+    }
+    .dark .frame-item::before { color: var(--lime); }
+    .frame-item h4 {
+      font-family: var(--font-display); font-weight: 700;
+      font-size: 18px; letter-spacing: 0.01em; text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    .frame-item p { font-size: 14px; line-height: 1.55; margin: 0; max-width: 60ch; }
+
+    /* big number callout */
+    .callout {
+      margin-top: 36px;
+      padding: 36px 32px;
+      background: var(--green-deep); color: var(--paper);
+      border-radius: 22px;
+      position: relative; overflow: hidden;
+    }
+    .callout::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(circle at 80% 30%, rgba(212,242,107,0.20), transparent 55%);
+    }
+    .callout > * { position: relative; z-index: 1; }
+    .callout .n {
+      font-family: var(--font-display); font-weight: 800;
+      font-size: clamp(48px, 8vw, 96px); line-height: 0.95; letter-spacing: 0.005em;
+      color: var(--lime); margin-bottom: 10px;
+    }
+    .callout .l {
+      font-family: var(--font-display); font-weight: 600;
+      font-size: 12px; letter-spacing: 0.20em; text-transform: uppercase;
+      color: rgba(242,237,223,0.65);
+    }
+    .callout p { color: rgba(242,237,223,0.85); margin-top: 14px; max-width: 50ch; }
+
+    /* keyword tags */
+    .keywords {
+      display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px;
+    }
+    .kw {
+      padding: 7px 13px;
+      border-radius: 999px;
+      background: var(--green-soft); color: var(--green-deep);
+      border: 1px solid rgba(92,154,64,0.22);
+      font-family: var(--font-display); font-weight: 600;
+      font-size: 11px; letter-spacing: 0.10em; text-transform: uppercase;
+    }
+    .dark .kw {
+      background: rgba(212,242,107,0.10); color: var(--lime);
+      border-color: rgba(212,242,107,0.30);
+    }
+
+    /* navigation rail */
+    .nav-rail {
+      position: fixed; right: 18px; top: 50%; transform: translateY(-50%);
+      z-index: 50; display: none; flex-direction: column; gap: 8px;
+    }
+    @media (min-width: 980px) { .nav-rail { display: flex; } }
+    .nav-rail a {
+      width: 10px; height: 10px; border-radius: 50%;
+      background: rgba(31,15,28,0.18);
+      transition: background-color .2s ease, transform .2s var(--ease);
+    }
+    .nav-rail a:hover { background: var(--green); transform: scale(1.4); }
+
+    /* end CTA */
+    .end-cta {
+      padding: 36px 30px;
+      background: var(--lime); color: var(--ink);
+      border-radius: 22px;
+      margin-top: 32px; display: inline-flex; align-items: center; gap: 22px;
+      flex-wrap: wrap;
+    }
+    .end-cta h3 { font-size: clamp(22px, 2vw, 30px); margin-bottom: 4px; }
+    .end-cta p { color: rgba(31,15,28,0.7); font-size: 14px; margin: 0; max-width: none; }
+    .end-cta a {
+      font-family: var(--font-display); font-weight: 700;
+      font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase;
+      color: var(--lime); background: var(--ink); padding: 14px 22px; border-radius: 999px;
+      text-decoration: none;
+      transition: background-color .2s ease, transform .2s var(--ease);
+    }
+    .end-cta a:hover { background: #000; transform: translateY(-1px); }
+
+    /* small print */
+    .footer-mini {
+      padding: 30px 6vw;
+      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;
+      background: var(--ink); color: rgba(242,237,223,0.5);
+      font-family: var(--font-display); font-weight: 600;
+      font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+    }
+    .footer-mini a { color: var(--lime); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <nav class="nav-rail" aria-hidden="true">
+    <a href="#cover" title="Cover"></a>
+    <a href="#01" title="The problem"></a>
+    <a href="#02" title="Why SEO matters"></a>
+    <a href="#03" title="Why story matters"></a>
+    <a href="#04" title="The tension"></a>
+    <a href="#05" title="How we balanced it"></a>
+    <a href="#06" title="Before vs after"></a>
+    <a href="#07" title="What's on the page"></a>
+    <a href="#08" title="What's next"></a>
+  </nav>
+
+  <!-- ============ COVER ============ -->
+  <section class="slide cover" id="cover">
+    <span class="slide-num"><strong>00</strong> &nbsp;/&nbsp; Cover</span>
+    <span class="slide-marker"><span class="dot"></span>Power Performance Chiropractic</span>
+    <div class="eyebrow">Homepage Review</div>
+    <h1>
+      Why <span class="lime">SEO</span> and<br>
+      <span class="lime">story</span> both matter.
+    </h1>
+    <p class="lead" style="color:rgba(242,237,223,0.85);margin-top:18px;">A walkthrough of the new homepage, the thinking behind it, and how it's built to rank and convert at the same time.</p>
+    <div class="cover-meta">
+      <div class="cover-meta-item">
+        <div class="l">For</div>
+        <div class="v">Dr. Chandler Obermire</div>
+      </div>
+      <div class="cover-meta-item">
+        <div class="l">From</div>
+        <div class="v">Hoffmedia</div>
+      </div>
+      <div class="cover-meta-item">
+        <div class="l">Status</div>
+        <div class="v">Live, v2</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 01 THE PROBLEM ============ -->
+  <section class="slide" id="01">
+    <span class="slide-num"><strong>01</strong> &nbsp;/&nbsp; The problem with the old site</span>
+    <span class="slide-marker"><span class="dot"></span>Where we started</span>
+    <div class="two">
+      <div>
+        <div class="eyebrow">Where we started</div>
+        <h2>Great care.<br><span class="it">Quiet website.</span></h2>
+        <p style="margin-top:20px;">The old site looked clean, said the right clinical things, and offered no clear reason to book. It wasn't ranking on Google for Bend search terms, and the copy read like a brochure instead of a conversation.</p>
+        <p>Two things were missing: <strong>SEO signal</strong> (so people could find it) and <strong>story</strong> (so people who found it would book).</p>
+      </div>
+      <div>
+        <div class="callout">
+          <div class="n">0</div>
+          <div class="l">Reasons given to book in the hero</div>
+          <p>The old hero said "Exceptional, patient-centered care" and "Optimize Your Health Today." Both true. Neither tells a stranger in pain why this is the chiropractor for them.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 02 WHY SEO MATTERS ============ -->
+  <section class="slide dark" id="02">
+    <span class="slide-num"><strong>02</strong> &nbsp;/&nbsp; Why SEO matters</span>
+    <span class="slide-marker"><span class="dot"></span>The traffic engine</span>
+    <div class="eyebrow">The traffic engine</div>
+    <h2>If they can't find you,<br>nothing else <span class="it">matters.</span></h2>
+    <p style="margin-top:22px;">Most new patients start with a Google search. "Chiropractor in Bend." "Sports chiropractor near me." "Back pain Bend Oregon." If those searches don't surface your site, your story never gets a chance to do its job.</p>
+    <div class="stats">
+      <div class="stat">
+        <div class="l">Searches per month</div>
+        <div class="n">~1.4k</div>
+        <div class="d">Estimated local Bend searches each month for "chiropractor" and related terms.</div>
+      </div>
+      <div class="stat">
+        <div class="l">Above-the-fold</div>
+        <div class="n">75%</div>
+        <div class="d">Of clicks go to the first three organic results. If you're not there, you're not in the game.</div>
+      </div>
+      <div class="stat">
+        <div class="l">Local intent</div>
+        <div class="n">9 / 10</div>
+        <div class="d">Chiropractic searches are local. Google's local pack rewards sites with strong local signals.</div>
+      </div>
+    </div>
+    <div class="keywords">
+      <span class="kw">Sports Chiropractor Bend</span>
+      <span class="kw">Chiropractor Central Oregon</span>
+      <span class="kw">Active Release Bend</span>
+      <span class="kw">Back Pain Bend OR</span>
+      <span class="kw">ART Bend Oregon</span>
+      <span class="kw">FAKTR Bend</span>
+      <span class="kw">Winback Tecar Bend</span>
+    </div>
+  </section>
+
+  <!-- ============ 03 WHY STORY MATTERS ============ -->
+  <section class="slide" id="03">
+    <span class="slide-num"><strong>03</strong> &nbsp;/&nbsp; Why story matters</span>
+    <span class="slide-marker"><span class="dot"></span>The conversion engine</span>
+    <div class="eyebrow">The conversion engine</div>
+    <h2>Traffic isn't the win.<br><span class="it">Booked patients are.</span></h2>
+    <p style="margin-top:22px;">Once someone lands on the page, they decide in about 8 seconds whether to scroll, click, or close the tab. Story is what makes that decision go your way. We use Donald Miller's <strong>StoryBrand</strong> framework: the customer is the hero, you're the guide, and the homepage is the moment they realize they have a plan.</p>
+
+    <h3 style="margin-top:42px;">The seven beats every homepage needs:</h3>
+    <div class="frame-list">
+      <div class="frame-item"><div><h4>A Character Wants Something</h4><p>Name who the visitor is and what they want. On PPC: "Out of pain. Staying that way."</p></div></div>
+      <div class="frame-item"><div><h4>And Has a Problem</h4><p>External pain + internal frustration. "You shouldn't have to live around the pain."</p></div></div>
+      <div class="frame-item"><div><h4>Then Meets a Guide</h4><p>Empathy first, authority second. "A chiropractor who actually gets it."</p></div></div>
+      <div class="frame-item"><div><h4>Who Gives Them a Plan</h4><p>Three simple steps. Book Online → First Visit → Back to You.</p></div></div>
+      <div class="frame-item"><div><h4>And Calls Them to Action</h4><p>Direct CTA in the hero, repeated near the close. No friction, one job.</p></div></div>
+      <div class="frame-item"><div><h4>That Ends in Success</h4><p>Paint the future. "Back to the things you actually love."</p></div></div>
+      <div class="frame-item"><div><h4>That Helps Avoid Failure</h4><p>FAQ removes the last objections that keep people from booking.</p></div></div>
+    </div>
+  </section>
+
+  <!-- ============ 04 THE TENSION ============ -->
+  <section class="slide" id="04">
+    <span class="slide-num"><strong>04</strong> &nbsp;/&nbsp; The tension</span>
+    <span class="slide-marker"><span class="dot"></span>SEO vs Story</span>
+    <div class="eyebrow">The tension</div>
+    <h2>SEO wants keywords.<br>Story wants <span class="it">humans.</span></h2>
+    <p style="margin-top:22px;">SEO copy, left alone, ends up keyword-stuffed and lifeless. Story copy, left alone, ranks for nothing. Most chiropractic websites pick a side and lose half the battle. The trick is writing one page that does both jobs at once.</p>
+
+    <div class="compare">
+      <div class="compare-card bad">
+        <span class="tag">SEO-only</span>
+        <div class="quote">"Sports chiropractic care in Bend OR offering Active Release Technique, FAKTR Protocol, and Functional Rehabilitation for athletes."</div>
+        <div class="note">Ranks for the keywords. Says nothing a human in pain wants to read. Visitors bounce.</div>
+      </div>
+      <div class="compare-card bad">
+        <span class="tag">Story-only</span>
+        <div class="quote">"You deserve to feel like yourself again."</div>
+        <div class="note">Emotional. Beautiful. Google has no idea what you do or where you do it. Nobody finds it.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 05 HOW WE BALANCED IT ============ -->
+  <section class="slide dark" id="05">
+    <span class="slide-num"><strong>05</strong> &nbsp;/&nbsp; How we balanced it</span>
+    <span class="slide-marker"><span class="dot"></span>The fix</span>
+    <div class="eyebrow">The fix</div>
+    <h2>Story carries the page.<br><span class="it">SEO lives in the structure.</span></h2>
+    <p style="margin-top:22px;">The visible copy is written for the human in pain. The behind-the-scenes structure (titles, meta, headings, schema, image alt text) carries the keyword load. Visitors see story. Google sees signal. Same page.</p>
+
+    <div class="stats">
+      <div class="stat">
+        <div class="l">Visible copy</div>
+        <div class="n">Story</div>
+        <div class="d">"Out of pain. Staying that way." "Three ways we get you back to yourself."</div>
+      </div>
+      <div class="stat">
+        <div class="l">Page title + meta</div>
+        <div class="n">SEO</div>
+        <div class="d">"Sports Chiropractor in Bend, OR | Power Performance Chiropractic"</div>
+      </div>
+      <div class="stat">
+        <div class="l">Schema markup</div>
+        <div class="n">Both</div>
+        <div class="d">Chiropractor schema with address, hours, area served, services, and 5-star rating.</div>
+      </div>
+    </div>
+
+    <p style="margin-top:28px;color:rgba(242,237,223,0.85);">The phrase "Bend's sports chiropractor" lives in the actual hero subhead. The phrase "Active Release," "FAKTR," "Winback Tecar" lives in image alt text, the FAQ, and the page schema. The visitor never has to read a list of acronyms. Google reads them anyway.</p>
+  </section>
+
+  <!-- ============ 06 BEFORE / AFTER ============ -->
+  <section class="slide" id="06">
+    <span class="slide-num"><strong>06</strong> &nbsp;/&nbsp; Before vs After</span>
+    <span class="slide-marker"><span class="dot"></span>What changed</span>
+    <div class="eyebrow">What changed</div>
+    <h2>Same care.<br><span class="it">Stronger words.</span></h2>
+    <p style="margin-top:22px;">Three places this shows up most clearly on the new homepage.</p>
+
+    <h3 style="margin-top:38px;">The hero headline</h3>
+    <div class="compare">
+      <div class="compare-card bad">
+        <span class="tag">Old</span>
+        <div class="quote">"Exceptional, Patient Centered Care"</div>
+        <div class="note">Says nothing about what the visitor gets or who it's for.</div>
+      </div>
+      <div class="compare-card good">
+        <span class="tag">New</span>
+        <div class="quote">"Out of pain. Staying that way."</div>
+        <div class="note">Names the outcome the visitor actually wants in five words.</div>
+      </div>
+    </div>
+
+    <h3 style="margin-top:38px;">The services block</h3>
+    <div class="compare">
+      <div class="compare-card bad">
+        <span class="tag">Old</span>
+        <div class="quote">"Active Release Technique &middot; FAKTR Protocol &middot; Functional Rehabilitation"</div>
+        <div class="note">Three clinical terms. Patients aren't searching for the technique; they're searching for relief.</div>
+      </div>
+      <div class="compare-card good">
+        <span class="tag">New</span>
+        <div class="quote">"Get Unstuck. Move Better. Stay Out of Pain."</div>
+        <div class="note">Three outcomes. The clinical terms still live in the meta labels and SEO structure.</div>
+      </div>
+    </div>
+
+    <h3 style="margin-top:38px;">The "made for" section</h3>
+    <div class="compare">
+      <div class="compare-card bad">
+        <span class="tag">Old</span>
+        <div class="quote">"Mt. Bachelor &middot; Smith Rock &middot; Phil's Trail &middot; Cascade Lakes &middot; FootZone Runners"</div>
+        <div class="note">A geography quiz. Doesn't connect to what the visitor does or wants.</div>
+      </div>
+      <div class="compare-card good">
+        <span class="tag">New</span>
+        <div class="quote">"Back to the things you actually love."</div>
+        <div class="note">Paints the future. The hike, the kid, the Saturday morning without three Advil.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 07 WHAT'S ON THE PAGE ============ -->
+  <section class="slide" id="07">
+    <span class="slide-num"><strong>07</strong> &nbsp;/&nbsp; What's on the page now</span>
+    <span class="slide-marker"><span class="dot"></span>The build</span>
+    <div class="eyebrow">The build</div>
+    <h2>Nine sections.<br><span class="it">One job each.</span></h2>
+    <p style="margin-top:22px;">Every section is doing one thing. No filler.</p>
+
+    <div class="frame-list">
+      <div class="frame-item"><div><h4>Hero</h4><p>Headline, subhead with location and audience, primary + secondary CTA, social proof (5.0 Google reviews).</p></div></div>
+      <div class="frame-item"><div><h4>Problem</h4><p>Name the pain visitors actually feel. Stakes for not solving it.</p></div></div>
+      <div class="frame-item"><div><h4>Services (Value Prop)</h4><p>Three outcomes the visitor walks away with. Modality names live in the small meta only.</p></div></div>
+      <div class="frame-item"><div><h4>Guide</h4><p>Dr. Chandler. Empathy + authority. Real photo, real creds, real quote.</p></div></div>
+      <div class="frame-item"><div><h4>Plan</h4><p>Book Online → First Visit → Back to You. Three steps, no mystery.</p></div></div>
+      <div class="frame-item"><div><h4>Reviews</h4><p>Three Google reviews, 5.0 rating, link to the full Google profile.</p></div></div>
+      <div class="frame-item"><div><h4>Success</h4><p>Paint the life on the other side. Local to Central Oregon.</p></div></div>
+      <div class="frame-item"><div><h4>FAQ</h4><p>Answer the objections that keep people from clicking Book.</p></div></div>
+      <div class="frame-item"><div><h4>Final CTA</h4><p>"Feel better. Stay that way." Book. Call. Done.</p></div></div>
+    </div>
+  </section>
+
+  <!-- ============ 08 WHAT'S NEXT ============ -->
+  <section class="slide dark" id="08">
+    <span class="slide-num"><strong>08</strong> &nbsp;/&nbsp; What's next</span>
+    <span class="slide-marker"><span class="dot"></span>Launch path</span>
+    <div class="eyebrow">Launch path</div>
+    <h2>Six more pages.<br><span class="it">Same playbook.</span></h2>
+    <p style="margin-top:22px;">Homepage is the front door. The full site needs the rest of the rooms.</p>
+
+    <div class="frame-list">
+      <div class="frame-item"><div><h4>Services Page</h4><p>One detail page per modality (ART, FAKTR, Winback Tecar, BFR, Rehab). Each carries its own SEO weight.</p></div></div>
+      <div class="frame-item"><div><h4>About</h4><p>Long-form Dr. Chandler bio + clinic story. Builds trust for hesitant first-time bookers.</p></div></div>
+      <div class="frame-item"><div><h4>Contact</h4><p>Address, phone, hours, map, contact form. Local SEO gold.</p></div></div>
+      <div class="frame-item"><div><h4>New Patient / Estimate</h4><p>Lead-gen form for people not ready to book directly on Jane App.</p></div></div>
+      <div class="frame-item"><div><h4>Thank You</h4><p>Confirmation page that fires the conversion event in analytics.</p></div></div>
+      <div class="frame-item"><div><h4>Privacy</h4><p>Required legal page. Quick, clean, done.</p></div></div>
+    </div>
+
+    <div class="end-cta">
+      <div>
+        <h3>See the live homepage</h3>
+        <p>The build this presentation is walking through.</p>
+      </div>
+      <a href="/" target="_blank">View the site →</a>
+    </div>
+  </section>
+
+  <footer class="footer-mini">
+    <span>Power Performance Chiropractic &nbsp;·&nbsp; Homepage Review v2</span>
+    <span>Built by <a href="https://hoffmediadesign.com" target="_blank" rel="noopener">Hoffmedia</a></span>
+  </footer>
+
+</body>
+</html>
