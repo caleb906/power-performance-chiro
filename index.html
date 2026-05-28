@@ -3,685 +3,1157 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chiropractor in Bend, OR | Power Performance Chiropractic | Dr. Chandler Obermire</title>
-  <meta name="description" content="Performance-focused chiropractic care in Bend, OR. ART, soft tissue, and rehab for athletes, active adults, and anyone tired of living in pain. Book online.">
+  <title>Sports Chiropractor in Bend, OR | Power Performance Chiropractic</title>
+  <meta name="description" content="Sports chiropractic for Central Oregon athletes, active adults, and people who work with their hands. ART, soft tissue, cupping, and rehab built around your body. Book online.">
   <link rel="canonical" href="https://powerperformancechiro.com/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Power Performance Chiropractic">
-  <meta property="og:title" content="Chiropractor in Bend, OR | Power Performance Chiropractic">
-  <meta property="og:description" content="Performance-focused chiropractic care in Bend, OR. ART, soft tissue, and rehab for athletes, active adults, and anyone tired of living in pain.">
+  <meta property="og:title" content="Sports Chiropractor in Bend, OR | Power Performance Chiropractic">
+  <meta property="og:description" content="Sports chiropractic for Central Oregon athletes and active adults. ART, soft tissue, cupping, and rehab.">
   <meta property="og:url" content="https://powerperformancechiro.com/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@500;600;700;800&family=Raleway:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --teal: #0EA5B7;
-      --teal-dark: #0A7E8C;
-      --teal-glow: rgba(14,165,183,0.15);
-      --black: #0B0F14;
-      --surface: #11161D;
-      --surface-2: #1A222D;
-      --border: rgba(255,255,255,0.07);
-      --border-hover: rgba(255,255,255,0.14);
-      --text: #F5F7FA;
-      --text-mid: rgba(255,255,255,0.68);
-      --text-dim: rgba(255,255,255,0.42);
-      --text-ghost: rgba(255,255,255,0.30);
-      --font-display: 'Oswald', sans-serif;
-      --font-body: 'Inter', sans-serif;
+      --green: #5C9A40;
+      --green-deep: #2E5F22;
+      --green-soft: #ECF2E5;
+      --teal: #1F6F6E;
+      --sky: #B8D5E2;
+      --lime: #D4F26B;
+      --paper: #F3EEE2;
+      --paper-warm: #E8DFCB;
+      --ink: #1F0F1C;
+      --ink-2: #2E1A2A;
+      --ink-mid: rgba(31,15,28,0.66);
+      --ink-dim: rgba(31,15,28,0.42);
+      --line: rgba(31,15,28,0.12);
+      --line-strong: rgba(31,15,28,0.22);
+      --font-display: 'Oxanium', 'Raleway', system-ui, sans-serif;
+      --font-accent: 'Raleway', system-ui, sans-serif;
+      --font-body: 'Raleway', 'Inter', system-ui, sans-serif;
       --ease: cubic-bezier(0.22, 1, 0.36, 1);
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
     body {
       font-family: var(--font-body);
-      background: var(--black);
-      color: var(--text);
-      line-height: 1.7;
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.6;
       -webkit-font-smoothing: antialiased;
       overflow-x: hidden;
+      padding-bottom: 76px;
     }
-    body::after {
+    @media (min-width: 900px) { body { padding-bottom: 0; } }
+    body::before {
       content: '';
       position: fixed;
       inset: 0;
       z-index: 9999;
       pointer-events: none;
-      opacity: 0.03;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      opacity: 0.10;
+      mix-blend-mode: multiply;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 600 600' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
     }
-    .ambient { position: fixed; width: 600px; height: 600px; border-radius: 50%; filter: blur(180px); opacity: 0.08; pointer-events: none; z-index: 0; }
-    .ambient-1 { background: var(--teal); top: -200px; right: -100px; }
-    .ambient-2 { background: #4C1D95; bottom: -300px; left: -200px; opacity: 0.05; }
-    .container { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
-    .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.7s ease, transform 0.7s var(--ease); }
-    .reveal.visible { opacity: 1; transform: translateY(0); }
-    .eyebrow {
-      display: inline-flex; align-items: center; gap: 8px;
-      padding: 6px 14px; background: var(--teal-glow);
-      border: 1px solid rgba(14,165,183,0.25); border-radius: 100px;
-      font-size: 11px; font-weight: 700; letter-spacing: 0.12em;
-      text-transform: uppercase; color: var(--teal); margin-bottom: 20px;
-    }
-    .section-header { text-align: center; margin-bottom: 48px; }
-    .section-header h2 {
-      font-family: var(--font-display); font-size: clamp(32px, 4vw, 48px);
-      letter-spacing: 0.02em; line-height: 1.05; margin-bottom: 16px; font-weight: 600;
-    }
-    .section-header p { font-size: 17px; color: var(--text-mid); max-width: 560px; margin: 0 auto; }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; }
 
-    /* ---- NAV ---- */
-    .nav{position:fixed;top:16px;left:50%;transform:translateX(-50%);width:calc(100% - 80px);max-width:1140px;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 24px;height:88px;background:rgba(11,15,20,0.72);backdrop-filter:blur(20px) saturate(1.4);-webkit-backdrop-filter:blur(20px) saturate(1.4);border:1px solid var(--border);border-radius:20px}
-    .nav-logo{height:60px;width:auto;opacity:1;display:block}
-    .nav-links{display:flex;align-items:center;gap:8px}
-    .nav-link{font-size:15px;font-weight:500;color:var(--text-dim);text-decoration:none;padding:10px 18px;border-radius:12px;transition:color 0.15s ease,background-color 0.15s ease}
-    .nav-link:hover{color:var(--text);background:rgba(255,255,255,0.04)}
-    .nav-link.active{color:var(--teal)}
-    .nav-actions{display:flex;align-items:center;gap:16px}
-    .nav-phone{font-size:15px;font-weight:500;color:var(--text-dim);text-decoration:none;transition:color 0.15s ease}
-    .nav-phone:hover{color:var(--text)}
-    .nav-cta{display:inline-flex;align-items:center;padding:12px 24px;background:var(--teal);color:#fff;font-size:14px;font-weight:700;text-decoration:none;border-radius:12px;letter-spacing:0.02em;transition:background-color 0.2s ease,transform 0.2s var(--ease)}
-    .nav-cta:hover{background:var(--teal-dark);transform:translateY(-1px)}
+    .wrap { width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 20px; }
 
-    /* ---- HERO ---- */
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
+    .reveal.in { opacity: 1; transform: none; }
+
+    /* ---------- NAV ---------- */
+    .nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(242,237,223,0.86);
+      backdrop-filter: blur(14px) saturate(1.2);
+      -webkit-backdrop-filter: blur(14px) saturate(1.2);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px; padding: 0 20px; max-width: 1240px; margin: 0 auto;
+    }
+    .nav-logo img { height: 38px; width: auto; }
+    .nav-links { display: none; align-items: center; gap: 6px; }
+    .nav-link {
+      font-size: 14px; font-weight: 500; text-decoration: none; color: var(--ink);
+      padding: 8px 14px; border-radius: 999px;
+      transition: background-color .2s ease, color .2s ease;
+    }
+    .nav-link:hover { background: rgba(13,20,17,0.06); }
+    .nav-right { display: flex; align-items: center; gap: 10px; }
+    .nav-phone {
+      display: none; align-items: center; gap: 6px;
+      font-size: 14px; font-weight: 600; text-decoration: none; color: var(--ink);
+    }
+    .nav-phone:hover { color: var(--green-deep); }
+    .nav-cta {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 10px 18px; background: var(--ink); color: var(--paper);
+      font-size: 13px; font-weight: 600; text-decoration: none;
+      border-radius: 999px; letter-spacing: 0.01em;
+      transition: background-color .2s ease, transform .2s var(--ease);
+    }
+    .nav-cta:hover { background: var(--green-deep); transform: translateY(-1px); }
+    .nav-cta:active { transform: translateY(0); }
+
+    .burger {
+      width: 42px; height: 42px; display: inline-flex; align-items: center; justify-content: center;
+      background: transparent; border: 1px solid var(--line-strong); border-radius: 999px;
+      color: var(--ink); cursor: pointer; padding: 0;
+      transition: background .2s ease, transform .2s var(--ease);
+    }
+    .burger:hover { background: rgba(13,20,17,0.06); }
+    .burger:active { transform: scale(0.94); }
+    .burger-bars { display: flex; flex-direction: column; gap: 4px; }
+    .burger-bars span { display: block; width: 18px; height: 1.5px; background: currentColor; border-radius: 2px; transition: transform .3s var(--ease), opacity .2s ease; }
+    body.menu-open .burger-bars span:nth-child(1) { transform: translateY(5.5px) rotate(45deg); }
+    body.menu-open .burger-bars span:nth-child(2) { opacity: 0; }
+    body.menu-open .burger-bars span:nth-child(3) { transform: translateY(-5.5px) rotate(-45deg); }
+
+    /* ---------- MOBILE MENU ---------- */
+    .menu {
+      position: fixed; inset: 0; z-index: 90;
+      background: var(--ink); color: var(--paper);
+      opacity: 0; visibility: hidden;
+      transition: opacity .35s var(--ease), visibility .35s;
+      display: grid; grid-template-rows: 64px 1fr auto;
+    }
+    .menu.open { opacity: 1; visibility: visible; }
+    .menu::before {
+      content: ''; position: absolute; top: -30%; right: -30%; width: 120%; height: 90%;
+      background: radial-gradient(circle, rgba(20,163,122,0.45), transparent 60%);
+      pointer-events: none;
+    }
+    .menu-nav { display: flex; flex-direction: column; padding: 16px 24px; position: relative; z-index: 1; gap: 4px; align-self: center; }
+    .menu-link {
+      display: flex; align-items: baseline; gap: 18px;
+      padding: 14px 0; text-decoration: none; color: var(--paper);
+      font-family: var(--font-display); font-weight: 700;
+      font-size: 38px; letter-spacing: 0.005em; text-transform: uppercase;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      opacity: 0; transform: translateY(14px);
+    }
+    .menu.open .menu-link { animation: menuIn .5s var(--ease) forwards; }
+    .menu.open .menu-link:nth-child(1) { animation-delay: .08s; }
+    .menu.open .menu-link:nth-child(2) { animation-delay: .14s; }
+    .menu.open .menu-link:nth-child(3) { animation-delay: .20s; }
+    .menu.open .menu-link:nth-child(4) { animation-delay: .26s; }
+    @keyframes menuIn { to { opacity: 1; transform: none; } }
+    .menu-link-num { font-family: var(--font-body); font-size: 12px; font-weight: 500; color: rgba(255,255,255,0.45); letter-spacing: 0.12em; }
+    .menu-link:hover { color: var(--lime); }
+    .menu-footer { padding: 20px 24px max(20px, env(safe-area-inset-bottom)); display: flex; flex-direction: column; gap: 10px; position: relative; z-index: 1; }
+    .menu-phone {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 16px 20px; background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08); border-radius: 14px;
+      color: var(--paper); text-decoration: none; font-weight: 600;
+    }
+    .menu-cta {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 22px; background: var(--lime); color: var(--ink);
+      font-weight: 700; text-decoration: none; border-radius: 14px;
+      font-size: 16px;
+    }
+    body.menu-open { overflow: hidden; }
+
+    /* ---------- HERO (full-bleed photo) ---------- */
     .hero {
-      position: relative; z-index: 1;
-      padding: 180px 24px 80px; min-height: 92vh;
-      display: flex; flex-direction: column; justify-content: center; align-items: center;
-      text-align: center; overflow: hidden;
+      position: relative;
+      min-height: 100vh;
+      min-height: 100svh;
+      padding: 120px 0 64px;
+      display: flex; flex-direction: column; justify-content: flex-end;
+      overflow: hidden;
+      color: var(--paper);
+      isolation: isolate;
     }
     .hero-bg {
       position: absolute; inset: 0; z-index: -2;
-      background: url('https://images.unsplash.com/photo-1517649763962-0c623066013b?w=1800&q=80') center/cover no-repeat;
+      background: url('brand_assets/photos/chandler-hero.jpg') center/cover no-repeat;
+      background-position: 50% 30%;
     }
-    .hero-overlay {
+    .hero-bg-overlay {
       position: absolute; inset: 0; z-index: -1;
       background:
-        radial-gradient(ellipse at 30% 20%, rgba(14,165,183,0.25), transparent 55%),
-        linear-gradient(to top, var(--black) 0%, rgba(11,15,20,0.85) 45%, rgba(11,15,20,0.65) 100%);
+        linear-gradient(to top, rgba(31,15,28,0.92) 0%, rgba(31,15,28,0.55) 40%, rgba(31,15,28,0.35) 70%, rgba(31,15,28,0.45) 100%),
+        linear-gradient(120deg, rgba(46,95,34,0.25) 0%, transparent 50%);
+    }
+    .hero-grid {
+      display: grid; grid-template-columns: 1fr;
+      gap: 28px; padding: 0 20px;
+      max-width: 1240px; margin: 0 auto;
+      width: 100%;
+    }
+    .hero-copy { padding-top: 12px; }
+    .hero-eyebrow {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 7px 14px 7px 10px;
+      background: rgba(255,255,255,0.10); backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 999px;
+      font-family: var(--font-display); font-weight: 600;
+      font-size: 11px; letter-spacing: 0.20em; text-transform: uppercase;
+      color: var(--paper);
+      margin-bottom: 24px;
+    }
+    .hero-eyebrow-dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--lime); box-shadow: 0 0 0 3px rgba(212,242,107,0.25);
     }
     .hero h1 {
-      font-family: var(--font-display); font-weight: 600;
-      font-size: clamp(40px, 6.5vw, 76px);
-      letter-spacing: 0.02em; line-height: 1.02;
-      margin-bottom: 22px; max-width: 920px;
+      font-family: var(--font-display); font-weight: 700;
+      font-size: clamp(40px, 8vw, 78px);
+      line-height: 1.02; letter-spacing: 0.005em;
+      text-transform: uppercase; color: var(--paper);
+      margin-bottom: 22px;
+      max-width: 18ch;
     }
-    .hero h1 em { font-style: normal; color: var(--teal); }
+    .hero h1 .accent {
+      color: var(--lime); font-weight: 700;
+    }
     .hero-sub {
-      font-size: 19px; color: var(--text-mid);
-      max-width: 580px; margin: 0 auto 36px; line-height: 1.6;
+      font-size: 17px; line-height: 1.55; color: rgba(242,237,223,0.86);
+      max-width: 520px; margin-bottom: 30px;
     }
-    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 32px; }
     .btn-primary {
-      display: inline-flex; align-items: center; padding: 15px 32px;
-      background: var(--teal); color: #fff;
-      font-size: 15px; font-weight: 700; text-decoration: none;
-      border-radius: 14px; letter-spacing: 0.01em;
-      transition: background-color 0.2s ease, transform 0.2s var(--ease), box-shadow 0.2s ease;
-      box-shadow: 0 4px 24px rgba(14,165,183,0.28);
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 16px 26px; background: var(--lime); color: var(--ink);
+      font-family: var(--font-display); font-weight: 700;
+      font-size: 14px; letter-spacing: 0.06em; text-transform: uppercase;
+      text-decoration: none; border-radius: 999px;
+      transition: background-color .2s ease, transform .2s var(--ease);
     }
-    .btn-primary:hover { background: var(--teal-dark); transform: translateY(-2px); box-shadow: 0 8px 36px rgba(14,165,183,0.4); }
-    .btn-primary:active { transform: translateY(0) scale(0.97); }
+    .btn-primary:hover { background: #dcff7a; transform: translateY(-1px); }
+    .btn-primary:active { transform: translateY(0); }
+    .btn-primary .arrow {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 22px; height: 22px; border-radius: 999px; background: var(--ink); color: var(--lime);
+      font-size: 13px; font-weight: 700;
+    }
     .btn-ghost {
-      display: inline-flex; align-items: center; padding: 15px 32px;
-      background: transparent; color: var(--text);
-      font-size: 15px; font-weight: 600; text-decoration: none;
-      border: 1px solid rgba(255,255,255,0.18); border-radius: 14px;
-      transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s var(--ease);
-    }
-    .btn-ghost:hover { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.35); transform: translateY(-1px); }
-    .hero-stats {
-      display: flex; gap: 48px; margin-top: 64px; padding-top: 40px;
-      border-top: 1px solid var(--border);
-    }
-    .hero-stat { text-align: center; }
-    .hero-stat-num { font-family: var(--font-display); font-size: 30px; letter-spacing: 0.02em; color: var(--text); font-weight: 600; }
-    .hero-stat-num .star { color: var(--teal); margin-right: 4px; }
-    .hero-stat-label { font-size: 12px; color: var(--text-dim); margin-top: 4px; letter-spacing: 0.04em; text-transform: uppercase; }
-    @media(max-width:640px) { .hero-stats { gap: 24px; flex-wrap: wrap; justify-content: center; } .hero-stat-num { font-size: 24px; } }
-
-    /* ---- PROBLEM ---- */
-    .problem { position: relative; z-index: 1; padding: 100px 24px; background: var(--surface); }
-    .problem-inner { max-width: 800px; margin: 0 auto; text-align: center; }
-    .problem h2 {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 15px 22px; background: transparent; color: var(--paper);
       font-family: var(--font-display); font-weight: 600;
-      font-size: clamp(30px, 4vw, 46px);
-      letter-spacing: 0.02em; line-height: 1.1; margin-bottom: 20px;
+      font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase;
+      text-decoration: none;
+      border: 1px solid rgba(242,237,223,0.32); border-radius: 999px;
+      transition: background-color .2s ease, border-color .2s ease;
     }
-    .problem h2 em { font-style: italic; color: var(--teal); font-weight: 500; }
-    .problem p { font-size: 18px; color: var(--text-mid); max-width: 620px; margin: 0 auto; line-height: 1.65; }
+    .btn-ghost:hover { background: rgba(242,237,223,0.08); border-color: var(--paper); }
+    /* On light surfaces, btn-ghost flips */
+    section:not(.hero):not(.problem):not(.reviews):not(.cta) .btn-ghost { color: var(--ink); border-color: var(--line-strong); }
+    section:not(.hero):not(.problem):not(.reviews):not(.cta) .btn-ghost:hover { background: rgba(31,15,28,0.05); border-color: var(--ink); }
+    /* Primary button on light surfaces returns to ink */
+    section:not(.hero):not(.cta) .btn-primary { background: var(--ink); color: var(--paper); }
+    section:not(.hero):not(.cta) .btn-primary:hover { background: var(--green-deep); }
+    section:not(.hero):not(.cta) .btn-primary .arrow { background: var(--lime); color: var(--ink); }
 
-    /* ---- GUIDE ---- */
-    .guide { position: relative; z-index: 1; padding: 100px 24px; }
-    .guide-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 64px; max-width: 1080px; margin: 0 auto; align-items: center; }
-    .guide-img {
-      border-radius: 20px; overflow: hidden; position: relative;
-      box-shadow: 0 24px 80px rgba(0,0,0,0.5);
+    .hero-meta {
+      display: flex; flex-wrap: wrap; gap: 32px;
+      padding-top: 24px; border-top: 1px solid rgba(242,237,223,0.18);
+    }
+    .hero-meta-item { flex: 0 0 auto; }
+    .hero-meta-item .n {
+      font-family: var(--font-display); font-weight: 700;
+      font-size: 24px; line-height: 1; color: var(--paper);
+      letter-spacing: 0.005em;
+    }
+    .hero-meta-item .n .stars { color: var(--lime); margin-right: 4px; font-weight: 500; }
+    .hero-meta-item .l { font-size: 10px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(242,237,223,0.62); margin-top: 8px; }
+
+    /* Hero image */
+    .hero-img-wrap {
+      position: relative;
       aspect-ratio: 4/5;
+      border-radius: 22px;
+      overflow: hidden;
+      background: var(--ink-2);
+      box-shadow: 0 30px 60px -30px rgba(13,20,17,0.45), 0 8px 24px -12px rgba(13,20,17,0.20);
     }
-    .guide-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
-    .guide-img::after {
+    .hero-img-wrap img {
+      width: 100%; height: 100%; object-fit: cover;
+      transform: scale(1.02);
+    }
+    .hero-img-wrap::after {
       content: ''; position: absolute; inset: 0;
-      background: linear-gradient(to top, rgba(11,15,20,0.55) 0%, transparent 50%);
+      background: linear-gradient(to top, rgba(13,20,17,0.55), transparent 45%);
     }
-    .guide-content h2 {
-      font-family: var(--font-display); font-weight: 600; font-size: 40px;
-      letter-spacing: 0.02em; line-height: 1.1; margin-bottom: 20px;
+    .hero-sticker {
+      position: absolute; bottom: 18px; left: 18px; right: 18px;
+      display: flex; align-items: center; gap: 12px;
+      padding: 14px 16px; background: var(--paper);
+      border-radius: 14px;
+      box-shadow: 0 12px 28px rgba(13,20,17,0.18);
     }
-    .guide-content > p { font-size: 16px; color: var(--text-mid); margin-bottom: 18px; }
-    .guide-creds { display: flex; flex-wrap: wrap; gap: 8px; margin: 24px 0 28px; }
-    .guide-cred { font-size: 12px; font-weight: 600; padding: 6px 12px; border-radius: 999px; color: var(--teal); background: rgba(14,165,183,0.10); border: 1px solid rgba(14,165,183,0.22); letter-spacing: 0.04em; }
-    .guide-quote {
-      padding: 20px 24px; background: var(--teal);
-      border-radius: 14px; color: #fff;
-      font-size: 16px; font-weight: 500; font-style: italic; line-height: 1.55;
-      box-shadow: 0 12px 36px rgba(14,165,183,0.25);
+    .hero-sticker-mark {
+      width: 42px; height: 42px; border-radius: 12px;
+      background: var(--green); color: #fff;
+      display: inline-flex; align-items: center; justify-content: center;
+      font-family: var(--font-display); font-size: 22px; flex-shrink: 0;
     }
-    .guide-cta { margin-top: 28px; }
-    @media(max-width:860px) {
-      .guide-grid { grid-template-columns: 1fr; gap: 32px; }
-      .guide-img { max-width: 420px; margin: 0 auto; }
+    .hero-sticker-text { font-size: 13px; line-height: 1.4; color: var(--ink); }
+    .hero-sticker-text strong { display: block; font-family: var(--font-display); font-weight: 700; font-size: 17px; letter-spacing: -0.02em; line-height: 1.1; margin-bottom: 2px; }
+
+    .hero-tag {
+      position: absolute; top: 22px; right: 22px;
+      padding: 8px 12px; background: var(--lime); color: var(--ink);
+      border-radius: 999px;
+      font-size: 11px; font-weight: 700; letter-spacing: 0.10em; text-transform: uppercase;
     }
 
-    /* ---- PLAN ---- */
-    .plan { position: relative; z-index: 1; padding: 100px 24px; background: var(--surface); }
-    .plan-grid {
-      display: grid; grid-template-columns: repeat(3, 1fr);
-      gap: 1px; max-width: 940px; margin: 0 auto;
-      background: var(--border); border-radius: 20px; overflow: hidden;
+    /* ---------- MARQUEE ---------- */
+    .marquee {
+      margin-top: 64px;
+      background: var(--ink); color: var(--paper);
+      padding: 16px 0;
+      overflow: hidden;
+      border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink);
     }
-    .plan-step { background: var(--surface-2); padding: 40px 32px; }
-    .plan-step-num { font-family: var(--font-display); font-size: 44px; color: rgba(14,165,183,0.22); line-height: 1; margin-bottom: 16px; font-weight: 700; }
-    .plan-step-title { font-family: var(--font-display); font-size: 20px; margin-bottom: 10px; letter-spacing: 0.02em; font-weight: 600; }
-    .plan-step-body { font-size: 14px; color: var(--text-dim); line-height: 1.7; }
-    @media(max-width:768px) { .plan-grid { grid-template-columns: 1fr; } }
-
-    /* ---- SERVICES ---- */
-    .services { position: relative; z-index: 1; padding: 100px 24px; }
-    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 1080px; margin: 0 auto; }
-    .service-card {
-      background: var(--surface); border: 1px solid var(--border);
-      border-radius: 18px; overflow: hidden;
-      transition: transform 0.25s var(--ease), border-color 0.25s ease, box-shadow 0.25s ease;
+    .marquee-track {
+      display: flex; gap: 48px; align-items: center;
+      width: max-content;
+      animation: marquee 28s linear infinite;
     }
-    .service-card:hover {
-      transform: translateY(-4px); border-color: rgba(14,165,183,0.35);
-      box-shadow: 0 18px 56px rgba(0,0,0,0.45);
+    .marquee-item {
+      font-family: var(--font-display); font-weight: 600;
+      font-size: 22px; letter-spacing: -0.015em;
+      white-space: nowrap;
+      display: inline-flex; align-items: center; gap: 48px;
     }
-    .service-card-img { position: relative; height: 200px; overflow: hidden; }
-    .service-card-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
-    .service-card-img::after {
-      content: ''; position: absolute; inset: 0;
-      background: linear-gradient(to top, rgba(11,15,20,0.65) 0%, transparent 60%);
+    .marquee-item:nth-child(even) { font-style: italic; font-weight: 500; color: var(--lime); }
+    .marquee-item::after { content: '✦'; color: var(--green); font-size: 16px; }
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
     }
-    .service-card-body { padding: 26px; }
-    .service-card-title { font-family: var(--font-display); font-size: 22px; letter-spacing: 0.02em; margin-bottom: 10px; font-weight: 600; }
-    .service-card-desc { font-size: 14px; color: var(--text-mid); line-height: 1.7; margin-bottom: 18px; }
-    .service-card-cta { font-size: 13px; font-weight: 700; color: var(--teal); text-decoration: none; letter-spacing: 0.04em; text-transform: uppercase; transition: color 0.15s ease; }
-    .service-card-cta:hover { color: #fff; }
-    .service-card-cta::after { content: ' →'; }
-    @media(max-width:768px) { .services-grid { grid-template-columns: 1fr; } }
 
-    /* ---- REVIEWS ---- */
-    .reviews { position: relative; z-index: 1; padding: 100px 24px; background: var(--surface); }
-    .reviews-head { text-align: center; margin-bottom: 56px; }
-    .reviews-stars { display: inline-flex; align-items: center; gap: 12px; padding: 10px 20px; background: rgba(14,165,183,0.10); border: 1px solid rgba(14,165,183,0.25); border-radius: 999px; margin-bottom: 24px; }
-    .reviews-stars-icons { color: var(--teal); letter-spacing: 2px; font-size: 18px; }
-    .reviews-stars-text { font-size: 14px; font-weight: 600; color: var(--text); }
-    .reviews-stars-text strong { color: var(--teal); }
-    .reviews-head h2 { font-family: var(--font-display); font-weight: 600; font-size: clamp(30px, 4vw, 44px); letter-spacing: 0.02em; line-height: 1.1; margin-bottom: 14px; }
-    .reviews-head p { font-size: 16px; color: var(--text-mid); max-width: 540px; margin: 0 auto; }
-    .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 1080px; margin: 0 auto; }
-    .review-card { background: var(--surface-2); border: 1px solid var(--border); border-radius: 18px; padding: 28px; display: flex; flex-direction: column; }
-    .review-card-stars { color: var(--teal); letter-spacing: 2px; font-size: 14px; margin-bottom: 14px; }
-    .review-card-body { font-size: 15px; color: var(--text-mid); line-height: 1.65; flex: 1; margin-bottom: 20px; font-style: italic; }
-    .review-card-author { display: flex; align-items: center; gap: 12px; padding-top: 18px; border-top: 1px solid var(--border); }
-    .review-card-avatar { width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, var(--teal), var(--teal-dark)); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; color: #fff; flex-shrink: 0; }
-    .review-card-meta { display: flex; flex-direction: column; }
-    .review-card-name { font-size: 14px; font-weight: 600; color: var(--text); }
-    .review-card-detail { font-size: 12px; color: var(--text-dim); }
-    .reviews-cta { text-align: center; margin-top: 48px; }
-    .reviews-cta a { font-size: 14px; font-weight: 600; color: var(--text-mid); text-decoration: none; border-bottom: 1px solid var(--border); padding-bottom: 4px; transition: color 0.15s ease, border-color 0.15s ease; }
-    .reviews-cta a:hover { color: var(--teal); border-color: var(--teal); }
-    @media(max-width:860px) { .reviews-grid { grid-template-columns: 1fr; max-width: 480px; } }
-
-    /* ---- AREA / BEND LOCAL PROOF ---- */
-    .area { position: relative; z-index: 1; padding: 100px 24px; }
-    .area-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; max-width: 1080px; margin: 0 auto; align-items: center; }
-    .area-content h2 { font-family: var(--font-display); font-weight: 600; font-size: 40px; letter-spacing: 0.02em; line-height: 1.1; margin-bottom: 18px; }
-    .area-content p { font-size: 16px; color: var(--text-mid); margin-bottom: 24px; }
-    .area-tags { display: flex; flex-wrap: wrap; gap: 8px; }
-    .area-tag {
-      padding: 7px 16px; border-radius: 999px;
-      font-size: 13px; font-weight: 600; color: var(--teal);
-      background: rgba(14,165,183,0.08); border: 1px solid rgba(14,165,183,0.22);
+    /* ---------- SECTION SHARED ---------- */
+    section { position: relative; }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 12px;
+      font-family: var(--font-display); font-weight: 600;
+      font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--green-deep); margin-bottom: 18px;
     }
-    .area-img { border-radius: 20px; overflow: hidden; box-shadow: 0 24px 80px rgba(0,0,0,0.5); aspect-ratio: 4/5; }
-    .area-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
-    @media(max-width:860px) { .area-grid { grid-template-columns: 1fr; gap: 32px; } .area-img { max-width: 420px; margin: 0 auto; } }
+    .eyebrow::before {
+      content: ''; display: inline-block;
+      width: 26px; height: 1.5px; background: var(--green); border-radius: 2px;
+    }
+    .section-h {
+      font-family: var(--font-display); font-weight: 700;
+      font-size: clamp(30px, 5vw, 56px); line-height: 1.05; letter-spacing: 0.005em;
+      text-transform: uppercase; color: var(--ink);
+    }
+    .section-h .it {
+      color: var(--green-deep); font-weight: 700;
+    }
 
-    /* ---- FAQ ---- */
-    .faq { position: relative; z-index: 1; padding: 100px 24px; background: var(--surface); }
-    .faq-list { max-width: 720px; margin: 0 auto; }
-    .faq-item { border-bottom: 1px solid var(--border); padding: 26px 0; transition: border-color 0.15s ease; }
-    .faq-item:hover { border-color: rgba(14,165,183,0.25); }
-    .faq-q { font-size: 17px; font-weight: 700; margin-bottom: 10px; color: var(--text); }
-    .faq-a { font-size: 15px; color: var(--text-mid); line-height: 1.7; }
-
-    /* ---- CTA ---- */
-    .cta {
-      position: relative; z-index: 1; padding: 90px 24px;
-      background: linear-gradient(135deg, var(--teal) 0%, var(--teal-dark) 100%); text-align: center;
+    /* ---------- PROBLEM ---------- */
+    .problem {
+      padding: 80px 0 70px;
+    }
+    .problem-card {
+      position: relative;
+      padding: 44px 28px;
+      background: var(--ink); color: var(--paper);
+      border-radius: 24px;
       overflow: hidden;
     }
-    .cta::before { content: ''; position: absolute; inset: 0; opacity: 0.18; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); pointer-events: none; }
-    .cta > * { position: relative; z-index: 1; }
-    .cta h2 {
+    .problem-card::before {
+      content: ''; position: absolute; top: -40px; right: -60px; width: 320px; height: 320px;
+      background: radial-gradient(circle, rgba(20,163,122,0.32), transparent 65%);
+      pointer-events: none;
+    }
+    .problem-card .eyebrow { color: var(--lime); }
+    .problem-card .eyebrow::before { background: var(--lime); }
+    .problem-card h2 {
+      font-family: var(--font-display); font-weight: 700;
+      font-size: clamp(28px, 5vw, 52px); line-height: 1.05; letter-spacing: 0.005em;
+      text-transform: uppercase; color: var(--paper);
+      margin-bottom: 22px;
+      position: relative; z-index: 1;
+    }
+    .problem-card h2 .it { color: var(--lime); font-weight: 700; }
+    .problem-card p {
+      font-size: 17px; line-height: 1.55; color: rgba(242,237,223,0.78);
+      max-width: 620px; position: relative; z-index: 1;
+    }
+
+    /* ---------- GUIDE ---------- */
+    .guide { padding: 60px 0 80px; }
+    .guide-grid { display: grid; grid-template-columns: 1fr; gap: 28px; align-items: start; }
+    .guide-img {
+      position: relative;
+      border-radius: 22px; overflow: hidden;
+      aspect-ratio: 4/5;
+      background: var(--ink-2);
+    }
+    .guide-img img { width: 100%; height: 100%; object-fit: cover; }
+    .guide-img::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(13,20,17,0.45), transparent 50%);
+    }
+    .guide-badge {
+      position: absolute; bottom: 18px; left: 18px;
+      padding: 10px 16px; background: var(--paper); color: var(--ink);
+      border-radius: 999px; font-size: 12px; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      display: inline-flex; align-items: center; gap: 8px;
+    }
+    .guide-badge .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); box-shadow: 0 0 0 3px rgba(20,163,122,0.2); }
+
+    .guide-content h2 { margin-bottom: 18px; }
+    .guide-content p { font-size: 16px; line-height: 1.65; color: var(--ink-mid); margin-bottom: 16px; }
+    .guide-creds {
+      display: block; margin: 22px 0 24px;
+      padding: 14px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
       font-family: var(--font-display); font-weight: 600;
-      font-size: clamp(32px, 5vw, 54px);
-      letter-spacing: 0.02em; line-height: 1.05; color: #fff; margin-bottom: 18px;
+      font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--ink-mid);
     }
-    .cta p { font-size: 17px; color: rgba(255,255,255,0.85); max-width: 540px; margin: 0 auto 32px; }
-    .btn-dark {
-      display: inline-flex; align-items: center; padding: 16px 38px;
-      background: var(--black); color: #fff;
-      font-size: 16px; font-weight: 700; text-decoration: none;
-      border-radius: 999px; letter-spacing: 0.02em;
-      transition: background-color 0.2s ease, transform 0.2s var(--ease), box-shadow 0.2s ease;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.35);
+    .guide-cred { display: inline; color: var(--ink); }
+    .guide-cred + .guide-cred::before { content: '·'; margin: 0 10px; color: var(--green); }
+    .guide-quote {
+      position: relative;
+      padding: 22px 22px 22px 30px;
+      border-left: 3px solid var(--green);
+      font-family: var(--font-accent); font-weight: 500;
+      font-size: 19px; line-height: 1.45; color: var(--ink);
+      margin-bottom: 24px;
     }
-    .btn-dark:hover { background: #18222c; transform: translateY(-2px); box-shadow: 0 10px 36px rgba(0,0,0,0.45); }
+    .guide-quote-attr {
+      display: block; margin-top: 14px;
+      font-family: var(--font-display); font-weight: 600;
+      font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-dim);
+    }
 
-    /* ---- FOOTER ---- */
-    .footer{padding:72px 24px 28px;border-top:1px solid var(--border);background:var(--surface);position:relative;z-index:1}
-    .footer-inner{max-width:1140px;margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr;gap:64px;padding-bottom:32px;border-bottom:1px solid var(--border)}
-    .footer-brand{max-width:380px}
-    .footer-logo-link{display:inline-block;line-height:0;transition:opacity 0.15s ease}
-    .footer-logo-link:hover{opacity:0.85}
-    .footer-logo{height:72px;width:auto;opacity:0.95;display:block;margin-bottom:20px}
-    .footer-tagline{font-size:14px;color:var(--text-mid);line-height:1.7;margin-bottom:20px}
-    .footer-contact{display:flex;flex-direction:column;gap:6px}
-    .footer-contact a, .footer-contact span {font-size:14px;color:var(--text-dim);text-decoration:none;transition:color 0.15s ease;}
-    .footer-contact a:hover{color:var(--teal)}
-    .footer-nav-wrap{display:grid;grid-template-columns:1fr 1fr;gap:32px}
-    .footer-section{display:flex;flex-direction:column;gap:10px}
-    .footer-heading{font-family:var(--font-display);font-size:13px;letter-spacing:0.12em;color:var(--teal);text-transform:uppercase;margin-bottom:6px;font-weight:600}
-    .footer-link{font-size:14px;color:var(--text-dim);text-decoration:none;transition:color 0.15s ease}
-    .footer-link:hover{color:var(--teal)}
-    .footer-bar{max-width:1140px;margin:0 auto;padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
-    .footer-copy{font-size:12px;color:var(--text-ghost)}
-    .footer-credit{font-size:12px;color:var(--text-dim)}
-    .footer-credit a{color:var(--teal);text-decoration:none;font-weight:600;transition:color 0.15s ease}
-    .footer-credit a:hover{color:#fff}
-    @media(max-width:768px){.footer{padding:56px 24px 24px;text-align:center}.footer-inner{grid-template-columns:1fr;gap:28px;padding-bottom:24px}.footer-brand{max-width:none;display:flex;flex-direction:column;align-items:center}.footer-logo{height:60px;margin:0 0 14px}.footer-contact{align-items:center}.footer-nav-wrap{grid-template-columns:1fr;gap:24px}.footer-section{align-items:center;gap:6px}.footer-bar{flex-direction:column;gap:6px;padding-top:16px}}
-
-    /* ---- BURGER + MOBILE MENU ---- */
-    .nav-burger{width:44px;height:44px;display:none;align-items:center;justify-content:center;background:transparent;border:none;cursor:pointer;color:var(--text);padding:0}
-    .nav-burger-bars{display:flex;flex-direction:column;gap:5px}
-    .nav-burger-bars span{display:block;width:22px;height:2px;background:currentColor;border-radius:2px;transition:transform 0.3s var(--ease),opacity 0.2s ease}
-    body.menu-open .nav-burger-bars span:nth-child(1){transform:translateY(7px) rotate(45deg)}
-    body.menu-open .nav-burger-bars span:nth-child(2){opacity:0}
-    body.menu-open .nav-burger-bars span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-    .menu{position:fixed;inset:0;z-index:300;background:var(--black);display:grid;grid-template-rows:auto 1fr auto;opacity:0;visibility:hidden;transition:opacity 0.35s var(--ease),visibility 0.35s}
-    .menu.open{opacity:1;visibility:visible}
-    .menu::before{content:'';position:absolute;top:-40%;right:-30%;width:120%;height:120%;background:radial-gradient(circle,rgba(14,165,183,0.25),transparent 55%);pointer-events:none}
-    .menu-top{display:flex;align-items:center;justify-content:space-between;padding:18px 24px;position:relative;z-index:1}
-    .menu-logo{height:44px;width:auto;display:block}
-    .menu-close{width:44px;height:44px;display:inline-flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.04);border:1px solid var(--border);border-radius:50%;cursor:pointer;color:var(--text);transition:background 0.2s ease,transform 0.2s var(--ease)}
-    .menu-close:hover{background:rgba(255,255,255,0.08)}
-    .menu-close:active{transform:scale(0.9) rotate(90deg)}
-    .menu-close svg{width:18px;height:18px;stroke-width:2.5}
-    .menu-nav{display:flex;flex-direction:column;padding:8px 24px;position:relative;z-index:1;align-self:center;width:100%}
-    .menu-link{display:flex;align-items:center;padding:18px 0;font-family:var(--font-display);font-weight:600;font-size:42px;letter-spacing:0.02em;color:var(--text);text-decoration:none;border-bottom:1px solid rgba(255,255,255,0.08);position:relative;opacity:0;transform:translateY(16px)}
-    .menu.open .menu-link{animation:menu-in 0.5s var(--ease) forwards}
-    .menu.open .menu-link:nth-child(1){animation-delay:0.08s}
-    .menu.open .menu-link:nth-child(2){animation-delay:0.14s}
-    .menu.open .menu-link:nth-child(3){animation-delay:0.20s}
-    .menu.open .menu-link:nth-child(4){animation-delay:0.26s}
-    @keyframes menu-in{to{opacity:1;transform:translateY(0)}}
-    .menu-link-num{font-size:12px;font-family:var(--font-body);font-weight:500;letter-spacing:0.08em;color:var(--text-dim);margin-right:16px;padding-top:10px;min-width:28px}
-    .menu-link:hover{color:var(--teal)}
-    .menu-footer{padding:24px;padding-bottom:max(24px,env(safe-area-inset-bottom));display:flex;flex-direction:column;gap:12px;position:relative;z-index:1}
-    .menu-phone{display:flex;align-items:center;gap:12px;padding:18px 20px;background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:14px;color:var(--text);text-decoration:none;font-weight:600}
-    .menu-cta{display:flex;align-items:center;justify-content:center;padding:18px;background:var(--teal);color:#fff;font-weight:700;font-size:16px;letter-spacing:0.02em;text-decoration:none;border-radius:14px;box-shadow:0 8px 24px rgba(14,165,183,0.28)}
-    body.menu-open{overflow:hidden}
-    @media(max-width:1024px) and (min-width:769px){
-      .nav{width:calc(100% - 32px);padding:0 18px;height:76px}
-      .nav-logo{height:52px}
-      .nav-link{font-size:14px;padding:9px 12px}
-      .nav-phone{display:none}
-      .nav-cta{padding:10px 18px;font-size:13px}
+    /* ---------- PLAN ---------- */
+    .plan { padding: 70px 0; background: var(--paper-warm); }
+    .plan-head { margin-bottom: 38px; }
+    .plan-head h2 { max-width: 700px; }
+    .plan-grid { display: grid; grid-template-columns: 1fr; gap: 1px; background: var(--line); border-radius: 22px; overflow: hidden; border: 1px solid var(--line); }
+    .plan-step {
+      background: var(--paper);
+      padding: 32px 24px 30px;
+      position: relative;
     }
-    @media(max-width:768px){
-      .nav{width:calc(100% - 24px);top:12px;padding:0 16px;height:72px;border-radius:16px}
-      .nav-logo{height:52px}
-      .nav-links,.nav-phone,.nav-cta,.nav-actions{display:none}
-      .nav-burger{display:inline-flex}
+    .plan-step-num {
+      font-family: var(--font-display); font-weight: 700;
+      font-size: 88px; line-height: 0.85; letter-spacing: 0.005em;
+      color: var(--ink); margin-bottom: 6px;
+      position: relative; display: inline-block;
+    }
+    .plan-step-num .num-it {
+      color: var(--green); font-weight: 700;
+    }
+    .plan-step-num::after {
+      content: ''; position: absolute;
+      right: -16px; top: 14px;
+      width: 12px; height: 12px; background: var(--green); border-radius: 50%;
+    }
+    .plan-step-meta {
+      display: block; font-family: var(--font-display); font-weight: 600;
+      font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--ink-dim); margin: 18px 0 6px; padding-top: 18px; border-top: 1px solid var(--line);
+    }
+    .plan-step-title {
+      font-family: var(--font-display); font-weight: 700;
+      font-size: 22px; letter-spacing: 0.01em; line-height: 1.1;
+      text-transform: uppercase;
+      margin: 6px 0 12px;
+    }
+    .plan-step-body { font-size: 15px; color: var(--ink-mid); line-height: 1.6; }
+
+    /* ---------- SERVICES ---------- */
+    .services { padding: 80px 0 70px; }
+    .services-head { display: flex; flex-direction: column; gap: 14px; margin-bottom: 36px; }
+    .services-head p { font-size: 16px; color: var(--ink-mid); max-width: 560px; }
+    .services-grid { display: grid; grid-template-columns: 1fr; gap: 18px; }
+    .svc {
+      position: relative; overflow: hidden;
+      border-radius: 22px;
+      background: var(--ink);
+      color: var(--paper);
+      aspect-ratio: 4/5;
+    }
+    .svc img {
+      position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+      transition: transform .6s var(--ease);
+    }
+    .svc:hover img { transform: scale(1.04); }
+    .svc::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(13,20,17,0.85) 0%, rgba(13,20,17,0.30) 45%, transparent 70%);
+      pointer-events: none;
+    }
+    .svc-body {
+      position: absolute; inset: auto 0 0 0;
+      padding: 22px;
+      z-index: 2;
+    }
+    .svc-meta {
+      display: block; font-family: var(--font-display); font-weight: 600;
+      font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--lime); margin-bottom: 12px;
+    }
+    .svc-title {
+      font-family: var(--font-display); font-weight: 700;
+      font-size: 30px; line-height: 1.02; letter-spacing: 0.01em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .svc-desc { font-size: 14px; line-height: 1.55; color: rgba(242,237,223,0.82); margin-bottom: 14px; max-width: 420px; }
+    .svc-link {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 12px; font-weight: 700; letter-spacing: 0.10em; text-transform: uppercase;
+      color: var(--lime); text-decoration: none;
+      padding-bottom: 3px; border-bottom: 1px solid rgba(199,242,92,0.4);
+      transition: border-color .2s ease;
+    }
+    .svc-link:hover { border-color: var(--lime); }
+
+    /* ---------- REVIEWS ---------- */
+    .reviews { padding: 70px 0; background: var(--ink); color: var(--paper); position: relative; overflow: hidden; }
+    .reviews::before {
+      content: ''; position: absolute; left: -20%; bottom: -40%; width: 60%; height: 90%;
+      background: radial-gradient(circle, rgba(20,163,122,0.20), transparent 65%);
+      pointer-events: none;
+    }
+    .reviews .eyebrow { color: var(--lime); }
+    .reviews .eyebrow::before { background: var(--lime); }
+    .reviews .section-h { color: var(--paper); }
+    .reviews .section-h .it { color: var(--lime); }
+    .reviews-head { margin-bottom: 36px; position: relative; z-index: 1; }
+    .reviews-rating {
+      display: inline-flex; align-items: center; gap: 12px;
+      margin-bottom: 22px;
+    }
+    .reviews-rating .stars { color: var(--lime); letter-spacing: 3px; font-size: 18px; }
+    .reviews-rating .txt {
+      font-family: var(--font-display); font-weight: 600;
+      font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(242,237,223,0.78);
+    }
+    .reviews-rating .txt strong { color: var(--lime); font-weight: 700; }
+    .reviews-grid { display: grid; grid-template-columns: 1fr; gap: 16px; position: relative; z-index: 1; }
+    .review {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.10);
+      padding: 24px;
+      border-radius: 18px;
+      display: flex; flex-direction: column;
+    }
+    .review-stars { color: var(--lime); letter-spacing: 2px; font-size: 14px; margin-bottom: 14px; }
+    .review-body {
+      font-family: var(--font-accent); font-weight: 400; font-style: italic;
+      font-size: 16px; line-height: 1.55; color: rgba(242,237,223,0.92);
+      flex: 1; margin-bottom: 18px;
+    }
+    .review-meta { display: flex; align-items: center; gap: 12px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.10); }
+    .review-avatar {
+      width: 38px; height: 38px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--green), var(--green-deep));
+      display: inline-flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: 13px; color: #fff; flex-shrink: 0;
+    }
+    .review-name { font-size: 14px; font-weight: 600; }
+    .review-loc { font-size: 12px; color: rgba(242,237,223,0.55); }
+    .reviews-foot { margin-top: 30px; position: relative; z-index: 1; }
+    .reviews-foot a {
+      font-size: 13px; font-weight: 600; color: var(--lime); text-decoration: none;
+      border-bottom: 1px solid rgba(199,242,92,0.4); padding-bottom: 3px;
+    }
+    .reviews-foot a:hover { border-color: var(--lime); }
+
+    /* ---------- AREA ---------- */
+    .area { padding: 80px 0 70px; }
+    .area-grid { display: grid; grid-template-columns: 1fr; gap: 24px; align-items: start; }
+    .area-img {
+      position: relative; border-radius: 22px; overflow: hidden;
+      aspect-ratio: 4/5;
+      background: var(--ink-2);
+    }
+    .area-img img { width: 100%; height: 100%; object-fit: cover; }
+    .area-img::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(20,163,122,0.20), transparent 55%);
+    }
+    .area-img-cap {
+      position: absolute; top: 18px; left: 18px;
+      padding: 8px 12px; background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(8px); border-radius: 10px;
+      font-size: 11px; font-weight: 700; letter-spacing: 0.10em; text-transform: uppercase; color: var(--ink);
+    }
+    .area-content h2 { margin-bottom: 18px; }
+    .area-content > p { font-size: 16px; line-height: 1.65; color: var(--ink-mid); margin-bottom: 22px; }
+    .area-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .area-tag {
+      padding: 7px 12px; border-radius: 999px;
+      background: var(--paper-warm); border: 1px solid var(--line);
+      font-size: 12px; font-weight: 600; color: var(--ink-2);
+    }
+    .area-tag-strong {
+      background: var(--ink); color: var(--paper); border-color: var(--ink);
+    }
+
+    /* ---------- FAQ ---------- */
+    .faq { padding: 70px 0; background: var(--paper-warm); }
+    .faq-head { margin-bottom: 30px; }
+    .faq-grid { display: grid; grid-template-columns: 1fr; gap: 0; max-width: 800px; }
+    details.faq-item {
+      border-top: 1px solid var(--line-strong);
+      padding: 22px 0;
+    }
+    details.faq-item:last-of-type { border-bottom: 1px solid var(--line-strong); }
+    details.faq-item summary {
+      list-style: none; cursor: pointer;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 16px;
+      font-family: var(--font-display); font-weight: 700;
+      font-size: 17px; letter-spacing: 0.01em; color: var(--ink);
+      line-height: 1.25;
+    }
+    details.faq-item summary::-webkit-details-marker { display: none; }
+    .faq-toggle {
+      width: 32px; height: 32px; border-radius: 50%;
+      background: var(--ink); color: var(--paper);
+      display: inline-flex; align-items: center; justify-content: center;
+      font-size: 18px; flex-shrink: 0;
+      transition: transform .3s var(--ease), background-color .2s ease;
+    }
+    details[open] .faq-toggle { transform: rotate(45deg); background: var(--green-deep); }
+    .faq-a {
+      font-size: 15px; color: var(--ink-mid); line-height: 1.65;
+      padding-top: 14px; max-width: 720px;
+    }
+
+    /* ---------- CTA ---------- */
+    .cta {
+      position: relative; overflow: hidden;
+      padding: 70px 0;
+      background: var(--green-deep); color: var(--paper);
+    }
+    .cta::before {
+      content: ''; position: absolute; inset: 0;
+      background:
+        radial-gradient(circle at 80% 20%, rgba(199,242,92,0.18), transparent 50%),
+        radial-gradient(circle at 10% 80%, rgba(20,163,122,0.55), transparent 60%);
+      pointer-events: none;
+    }
+    .cta::after {
+      content: ''; position: absolute; inset: 0; opacity: 0.18; pointer-events: none;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      mix-blend-mode: overlay;
+    }
+    .cta-inner { position: relative; z-index: 1; }
+    .cta .eyebrow { color: var(--lime); }
+    .cta .eyebrow::before { background: var(--lime); }
+    .cta h2 {
+      font-family: var(--font-display); font-weight: 700;
+      font-size: clamp(32px, 6vw, 64px); line-height: 1.05; letter-spacing: 0.005em;
+      text-transform: uppercase; color: var(--paper);
+      margin-bottom: 20px;
+    }
+    .cta h2 .it { color: var(--lime); font-weight: 700; }
+    .cta p { font-size: 17px; line-height: 1.55; color: rgba(242,237,223,0.85); max-width: 540px; margin-bottom: 28px; }
+    .cta-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+    .cta .btn-primary { background: var(--lime); color: var(--ink); }
+    .cta .btn-primary .arrow { background: var(--ink); color: var(--lime); }
+    .cta .btn-primary:hover { background: #d8ff70; transform: translateY(-1px); }
+    .cta .btn-ghost { color: var(--paper); border-color: rgba(242,237,223,0.32); }
+    .cta .btn-ghost:hover { background: rgba(242,237,223,0.08); border-color: var(--paper); }
+
+    /* ---------- FOOTER ---------- */
+    .footer {
+      background: var(--ink); color: var(--paper);
+      padding: 60px 0 24px;
+    }
+    .footer-inner {
+      display: grid; grid-template-columns: 1fr; gap: 36px;
+      padding-bottom: 32px; border-bottom: 1px solid rgba(255,255,255,0.10);
+    }
+    .footer-logo { height: 56px; width: auto; margin-bottom: 18px; }
+    .footer-tagline { font-size: 14px; line-height: 1.65; color: rgba(242,237,223,0.66); margin-bottom: 18px; max-width: 360px; }
+    .footer-contact { display: flex; flex-direction: column; gap: 6px; }
+    .footer-contact a, .footer-contact span { font-size: 14px; color: rgba(242,237,223,0.66); text-decoration: none; transition: color .15s ease; }
+    .footer-contact a:hover { color: var(--lime); }
+    .footer-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .footer-h {
+      font-family: var(--font-body); font-weight: 700;
+      font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--lime); margin-bottom: 14px;
+    }
+    .footer-col a, .footer-col span {
+      display: block; font-size: 14px; color: rgba(242,237,223,0.66); text-decoration: none;
+      padding: 4px 0; transition: color .15s ease;
+    }
+    .footer-col a:hover { color: var(--lime); }
+    .footer-bar {
+      padding-top: 24px; display: flex; flex-wrap: wrap; gap: 10px;
+      justify-content: space-between; align-items: center;
+    }
+    .footer-copy { font-size: 12px; color: rgba(242,237,223,0.4); }
+    .footer-credit { font-size: 12px; color: rgba(242,237,223,0.5); }
+    .footer-credit a { color: var(--lime); text-decoration: none; font-weight: 600; }
+    .footer-credit a:hover { color: #fff; }
+
+    /* ---------- MOBILE STICKY CTA ---------- */
+    .sticky-cta {
+      position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 80;
+      display: flex; gap: 8px;
+      padding: 8px;
+      background: var(--ink); color: var(--paper);
+      border-radius: 16px;
+      box-shadow: 0 18px 40px -10px rgba(13,20,17,0.45);
+      backdrop-filter: blur(10px);
+    }
+    .sticky-cta a {
+      flex: 1; text-align: center;
+      padding: 13px 12px;
+      font-size: 14px; font-weight: 600;
+      text-decoration: none;
+      border-radius: 10px;
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    }
+    .sticky-cta .scta-phone { background: transparent; color: var(--paper); border: 1px solid rgba(255,255,255,0.16); }
+    .sticky-cta .scta-book { background: var(--lime); color: var(--ink); }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (min-width: 720px) {
+      .hero-meta-item .n { font-size: 36px; }
+      .reviews-grid, .services-grid, .area-tags { gap: 18px; }
+      .plan-grid { grid-template-columns: repeat(3, 1fr); }
+      .services-grid { grid-template-columns: repeat(3, 1fr); }
+      .reviews-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    @media (min-width: 900px) {
+      .nav-links { display: inline-flex; }
+      .nav-phone { display: inline-flex; }
+      .burger { display: none; }
+      .sticky-cta { display: none; }
+
+      .hero { padding: 140px 0 90px; min-height: 92vh; }
+      .hero-grid { max-width: 1240px; }
+      .hero-copy { max-width: 880px; }
+      .hero-sub { font-size: 19px; max-width: 580px; }
+      .hero-meta { gap: 56px; padding-top: 28px; margin-top: 8px; max-width: 720px; }
+      .hero-meta-item .n { font-size: 26px; }
+
+      .problem { padding: 110px 0 90px; }
+      .problem-card { padding: 70px 64px; }
+
+      .guide { padding: 90px 0 110px; }
+      .guide-grid { grid-template-columns: 1fr 1.1fr; gap: 56px; align-items: center; }
+      .guide-img { aspect-ratio: 5/6; max-width: 500px; }
+
+      .plan { padding: 100px 0; }
+      .plan-head { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: end; margin-bottom: 50px; }
+      .plan-head p { font-size: 16px; color: var(--ink-mid); max-width: 440px; }
+      .plan-step { padding: 40px 32px 38px; }
+      .plan-step-num { font-size: 120px; }
+
+      .services { padding: 110px 0 100px; }
+      .services-head { flex-direction: row; justify-content: space-between; align-items: end; gap: 40px; }
+      .services-head .section-h { max-width: 720px; }
+
+      .reviews { padding: 100px 0; }
+
+      .area { padding: 110px 0 100px; }
+      .area-grid { grid-template-columns: 1fr 1.1fr; gap: 56px; align-items: center; }
+      .area-img { aspect-ratio: 5/6; }
+
+      .faq { padding: 100px 0; }
+      .faq-head { display: grid; grid-template-columns: 1fr 1.4fr; gap: 56px; align-items: end; }
+      details.faq-item summary { font-size: 26px; }
+
+      .cta { padding: 110px 0; }
+
+      .footer { padding: 80px 0 30px; }
+      .footer-inner { grid-template-columns: 1.4fr 1fr 1fr; gap: 56px; padding-bottom: 40px; }
+      .footer-cols { display: contents; }
+    }
+
+    @media (min-width: 1100px) {
+      .hero h1 { font-size: 156px; }
+      .marquee-item { font-size: 28px; }
+      .plan-step-num { font-size: 140px; }
     }
   </style>
 </head>
 <body>
-  <div class="ambient ambient-1"></div>
-  <div class="ambient ambient-2"></div>
 
-  <!-- NAV -->
+  <!-- ============ NAV ============ -->
   <nav class="nav">
-    <a href="/"><img src="https://images.squarespace-cdn.com/content/v1/67869c6fdab56c582a307d44/d8148a6d-4eda-4d6b-8e66-7a6ddb53e4f8/PPC_Primary+Logo+CLR.png?format=1500w" alt="Power Performance Chiropractic logo" class="nav-logo"></a>
-    <div class="nav-links">
-      <a href="/" class="nav-link active">Home</a>
-      <a href="#services" class="nav-link">Services</a>
-      <a href="#about" class="nav-link">About</a>
-      <a href="#reviews" class="nav-link">Reviews</a>
+    <div class="nav-inner">
+      <a href="/" class="nav-logo" aria-label="Power Performance Chiropractic home">
+        <img src="brand_assets/ppc-logo.webp" alt="Power Performance Chiropractic">
+      </a>
+      <div class="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#plan" class="nav-link">How It Works</a>
+        <a href="#reviews" class="nav-link">Reviews</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </div>
+      <div class="nav-right">
+        <a href="tel:+14586009345" class="nav-phone">(458) 600-9345</a>
+        <a href="https://powerperformancechiro.janeapp.com/" target="_blank" rel="noopener" class="nav-cta">Book Now</a>
+        <button class="burger" aria-label="Open menu" onclick="openMenu()">
+          <span class="burger-bars"><span></span><span></span><span></span></span>
+        </button>
+      </div>
     </div>
-    <div class="nav-actions">
-      <a href="tel:+14586009345" class="nav-phone">(458) 600-9345</a>
-      <a href="https://powerperformancechiro.janeapp.com/" target="_blank" rel="noopener" class="nav-cta">Book Now</a>
-    </div>
-    <button class="nav-burger" aria-label="Open menu" onclick="openMenu()"><span class="nav-burger-bars"><span></span><span></span><span></span></span></button>
   </nav>
 
-  <!-- MOBILE MENU -->
-  <div class="menu" id="mobileMenu">
-    <div class="menu-top">
-      <a href="/"><img src="https://images.squarespace-cdn.com/content/v1/67869c6fdab56c582a307d44/d8148a6d-4eda-4d6b-8e66-7a6ddb53e4f8/PPC_Primary+Logo+CLR.png?format=1500w" alt="Power Performance Chiropractic" class="menu-logo"></a>
-      <button class="menu-close" aria-label="Close menu" onclick="closeMenu()"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round"/></svg></button>
+  <!-- ============ MOBILE MENU ============ -->
+  <div class="menu" id="menu" aria-hidden="true">
+    <div class="nav-inner" style="position:relative;z-index:1;">
+      <a href="/" class="nav-logo"><img src="brand_assets/ppc-logo.webp" alt="Power Performance Chiropractic" style="filter: brightness(0) invert(1); opacity: 0.95;"></a>
+      <button class="burger" aria-label="Close menu" onclick="closeMenu()" style="border-color: rgba(255,255,255,0.18); color: var(--paper);">
+        <span class="burger-bars"><span></span><span></span><span></span></span>
+      </button>
     </div>
     <nav class="menu-nav">
-      <a href="/" class="menu-link"><span class="menu-link-num">01</span>Home</a>
+      <a href="#about" class="menu-link" onclick="closeMenu()"><span class="menu-link-num">01</span>About</a>
       <a href="#services" class="menu-link" onclick="closeMenu()"><span class="menu-link-num">02</span>Services</a>
-      <a href="#about" class="menu-link" onclick="closeMenu()"><span class="menu-link-num">03</span>About</a>
+      <a href="#plan" class="menu-link" onclick="closeMenu()"><span class="menu-link-num">03</span>How It Works</a>
       <a href="#reviews" class="menu-link" onclick="closeMenu()"><span class="menu-link-num">04</span>Reviews</a>
     </nav>
     <div class="menu-footer">
-      <a href="tel:+14586009345" class="menu-phone">(458) 600-9345</a>
-      <a href="https://powerperformancechiro.janeapp.com/" target="_blank" rel="noopener" class="menu-cta">Book an Appointment</a>
+      <a href="tel:+14586009345" class="menu-phone">
+        <span>(458) 600-9345</span>
+        <span style="color: var(--lime); font-size: 12px; letter-spacing: 0.10em; text-transform: uppercase;">Call</span>
+      </a>
+      <a href="https://powerperformancechiro.janeapp.com/" target="_blank" rel="noopener" class="menu-cta">
+        <span>Book an Appointment</span>
+        <span>→</span>
+      </a>
     </div>
   </div>
-  <script>function openMenu(){document.getElementById('mobileMenu').classList.add('open');document.body.classList.add('menu-open')}function closeMenu(){document.getElementById('mobileMenu').classList.remove('open');document.body.classList.remove('menu-open')}</script>
 
-  <!-- HERO -->
+  <!-- ============ HERO ============ -->
   <section class="hero">
     <div class="hero-bg"></div>
-    <div class="hero-overlay"></div>
-    <div class="eyebrow">Sports Chiropractic · Bend, OR</div>
-    <h1>Bend's chiropractor for athletes, active adults, and people who work with <em>their hands</em>.</h1>
-    <p class="hero-sub">Get out of pain. Get your mobility back. Get back to what you love &mdash; without modifying the life that makes Bend, Bend.</p>
-    <div class="hero-actions">
-      <a href="https://powerperformancechiro.janeapp.com/" target="_blank" rel="noopener" class="btn-primary">Book an Appointment</a>
-      <a href="#services" class="btn-ghost">See What We Treat</a>
-    </div>
-    <div class="hero-stats">
-      <div class="hero-stat">
-        <div class="hero-stat-num"><span class="star">★</span>5.0</div>
-        <div class="hero-stat-label">22+ Google Reviews</div>
-      </div>
-      <div class="hero-stat">
-        <div class="hero-stat-num">ART</div>
-        <div class="hero-stat-label">Active Release Certified</div>
-      </div>
-      <div class="hero-stat">
-        <div class="hero-stat-num">FAKTR</div>
-        <div class="hero-stat-label">Soft Tissue Protocol</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROBLEM -->
-  <section class="problem reveal">
-    <div class="problem-inner">
-      <div class="eyebrow">The Problem</div>
-      <h2>Pain shouldn't decide what your <em>weekend looks like</em>.</h2>
-      <p>You skip the ride. You sit out the climb. You ice the knee, pop the ibuprofen, and tell yourself you'll deal with it later. Your body was built to move. Living around the pain isn't the plan.</p>
-    </div>
-  </section>
-
-  <!-- GUIDE -->
-  <section class="guide reveal" id="about">
-    <div class="guide-grid">
-      <div class="guide-img">
-        <img src="https://images.unsplash.com/photo-1612531385446-f7e6d131e1d0?w=1000&q=80" alt="Dr. Chandler Obermire treating a patient">
-      </div>
-      <div class="guide-content">
-        <div class="eyebrow">Meet Dr. Chandler</div>
-        <h2>An Oregon-grown chiropractor who actually moves.</h2>
-        <p>Dr. Chandler Obermire grew up active in Oregon, studied Kinesiology at OSU, and earned his Doctorate at Palmer West. He built Power Performance for the people he trains, rides, climbs, and works alongside &mdash; not for fluorescent waiting rooms and 8-minute adjustments.</p>
-        <p>Every visit starts with the full picture: how you move, how you load, what's been compensating for what. Then a plan you can actually execute.</p>
-        <div class="guide-creds">
-          <span class="guide-cred">DC, Palmer West</span>
-          <span class="guide-cred">Kinesiology, OSU</span>
-          <span class="guide-cred">ART Certified</span>
-          <span class="guide-cred">FAKTR Protocol</span>
-          <span class="guide-cred">TPI Track</span>
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <h1>
+          Out of pain.<br>
+          <span class="accent">Staying that way.</span>
+        </h1>
+        <p class="hero-sub">Power Performance is Bend's sports chiropractor for athletes, active adults, and people who work hard with their bodies. We treat the cause, not just the spot, so you can stop living around the pain.</p>
+        <div class="hero-actions">
+          <a href="https://powerperformancechiro.janeapp.com/" target="_blank" rel="noopener" class="btn-primary">
+            Book an Appointment <span class="arrow">→</span>
+          </a>
+          <a href="tel:+14586009345" class="btn-ghost">(458) 600-9345</a>
         </div>
-        <div class="guide-quote">"Your body is built to move. My job is to keep it that way &mdash; long after you walk out of my office."</div>
-        <div class="guide-cta"><a href="https://powerperformancechiro.janeapp.com/" target="_blank" rel="noopener" class="btn-primary">Book a 30-Min Eval</a></div>
+        <div class="hero-meta">
+          <div class="hero-meta-item">
+            <div class="n"><span class="stars">★</span>5.0</div>
+            <div class="l">22+ Google Reviews</div>
+          </div>
+          <div class="hero-meta-item">
+            <div class="n">Bend, OR</div>
+            <div class="l">1725 SW Chandler Ave</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ============ PROBLEM ============ -->
+  <section class="problem reveal">
+    <div class="wrap">
+      <div class="problem-card">
+        <div class="eyebrow">If This Sounds Familiar</div>
+        <h2>You shouldn't have to <span class="it">live around the pain.</span></h2>
+        <p>You ice it. You stretch it. You hope it goes away. You've started skipping the things you used to love because your body keeps showing up to remind you. There's a better way to handle it, and it doesn't start with another prescription.</p>
       </div>
     </div>
   </section>
 
-  <!-- PLAN -->
-  <section class="plan reveal">
-    <div class="container">
-      <div class="section-header">
-        <div class="eyebrow">How It Works</div>
-        <h2>Three steps. No mystery.</h2>
+  <!-- ============ SERVICES (Value Prop) ============ -->
+  <section class="services reveal" id="services">
+    <div class="wrap">
+      <div class="services-head">
+        <div>
+          <div class="eyebrow">How We Help</div>
+          <h2 class="section-h">Three ways we get you <span class="it">back to yourself.</span></h2>
+        </div>
+        <p>Most people walk out feeling better after the first visit. Here's what that usually looks like.</p>
+      </div>
+      <div class="services-grid">
+        <article class="svc">
+          <img src="brand_assets/photos/art-shoulder.jpg" alt="Hands-on soft tissue work">
+          <div class="svc-body">
+            <span class="svc-meta">Pain &amp; Tightness</span>
+            <h3 class="svc-title">Get Unstuck.</h3>
+            <p class="svc-desc">Hands-on work for the muscles and tissue that keep you tight no matter how much you stretch.</p>
+            <a href="https://powerperformancechiro.janeapp.com/" target="_blank" rel="noopener" class="svc-link">Book a Visit →</a>
+          </div>
+        </article>
+        <article class="svc">
+          <img src="brand_assets/photos/adjustment-hands.jpg" alt="Chiropractic adjustments">
+          <div class="svc-body">
+            <span class="svc-meta">Joint &amp; Spine Care</span>
+            <h3 class="svc-title">Move Better.</h3>
+            <p class="svc-desc">Adjustments that get your body moving the way it should. Less stiffness, fewer flare-ups.</p>
+            <a href="https://powerperformancechiro.janeapp.com/" target="_blank" rel="noopener" class="svc-link">Book a Visit →</a>
+          </div>
+        </article>
+        <article class="svc">
+          <img src="brand_assets/photos/gym-rehab.jpg" alt="Movement coaching">
+          <div class="svc-body">
+            <span class="svc-meta">Strength &amp; Recovery</span>
+            <h3 class="svc-title">Stay Out of Pain.</h3>
+            <p class="svc-desc">Simple exercises built for your body and your week. The work between visits that makes it stick.</p>
+            <a href="https://powerperformancechiro.janeapp.com/" target="_blank" rel="noopener" class="svc-link">Book a Visit →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GUIDE ============ -->
+  <section class="guide reveal" id="about">
+    <div class="wrap">
+      <div class="guide-grid">
+        <div class="guide-img">
+          <img src="brand_assets/photos/chandler-portrait.jpg" alt="Dr. Chandler Obermire">
+        </div>
+        <div class="guide-content">
+          <div class="eyebrow">Who You'll See</div>
+          <h2 class="section-h">A chiropractor who <span class="it">actually gets it.</span></h2>
+          <p style="margin-top:18px;">Dr. Chandler grew up active in Oregon and built Power Performance for the kind of care he'd want for himself. Take the time. Find the root cause. Give people a real plan.</p>
+          <p>You won't get rushed through a fifteen-minute crack-and-go. Every visit starts with the whole picture, not just the spot that hurts.</p>
+          <div class="guide-creds">
+            <span class="guide-cred">Doctor of Chiropractic</span>
+            <span class="guide-cred">Palmer West</span>
+            <span class="guide-cred">Kinesiology, Oregon State</span>
+          </div>
+          <div class="guide-quote">
+            Your body is built to move. My job is to keep it that way, long after you walk out of my office.
+            <span class="guide-quote-attr">Dr. Chandler Obermire</span>
+          </div>
+          <a href="https://powerperformancechiro.janeapp.com/" target="_blank" rel="noopener" class="btn-primary">Book a First Visit <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PLAN ============ -->
+  <section class="plan reveal" id="plan">
+    <div class="wrap">
+      <div class="plan-head">
+        <div>
+          <div class="eyebrow">How It Works</div>
+          <h2 class="section-h">Simple. <span class="it">Start to finish.</span></h2>
+        </div>
+        <p>Getting better shouldn't feel like another part-time job. Here's how the first month usually goes.</p>
       </div>
       <div class="plan-grid">
         <div class="plan-step">
-          <div class="plan-step-num">01</div>
-          <div class="plan-step-title">Book Online</div>
-          <p class="plan-step-body">Pick a time that fits your schedule on Jane App. Takes under a minute. No phone tag, no paperwork mailed to your house.</p>
+          <div class="plan-step-num">0<span class="num-it">1</span></div>
+          <span class="plan-step-meta">Step One</span>
+          <div class="plan-step-title">Book Online.</div>
+          <p class="plan-step-body">Pick a time online. Takes under a minute, no phone tag.</p>
         </div>
         <div class="plan-step">
-          <div class="plan-step-num">02</div>
-          <div class="plan-step-title">Full-Body Evaluation</div>
-          <p class="plan-step-body">A real movement assessment, not a 5-minute crack. We map what's actually driving the pain &mdash; not just where you feel it.</p>
+          <div class="plan-step-num">0<span class="num-it">2</span></div>
+          <span class="plan-step-meta">Step Two</span>
+          <div class="plan-step-title">First Visit.</div>
+          <p class="plan-step-body">We sit down, look at how you move, and figure out what's actually going on. Then we treat it.</p>
         </div>
         <div class="plan-step">
-          <div class="plan-step-num">03</div>
-          <div class="plan-step-title">Get Back to Doing</div>
-          <p class="plan-step-body">A personalized treatment plan you can stick to. Adjustments, soft tissue, rehab &mdash; whatever your body actually needs.</p>
+          <div class="plan-step-num">0<span class="num-it">3</span></div>
+          <span class="plan-step-meta">Step Three</span>
+          <div class="plan-step-title">Back to You.</div>
+          <p class="plan-step-body">A plan you can stick to that gets you out of pain and keeps you out of pain.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SERVICES -->
-  <section class="services reveal" id="services">
-    <div class="container">
-      <div class="section-header">
-        <div class="eyebrow">What We Treat</div>
-        <h2>Built for movement. Backed by science.</h2>
-        <p>Care designed for people who actually use their bodies. Adjustments are the start, not the finish line.</p>
-      </div>
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="service-card-img"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=900&q=80" alt="Active Release Technique soft tissue therapy"></div>
-          <div class="service-card-body">
-            <div class="service-card-title">Active Release (ART)</div>
-            <p class="service-card-desc">The gold-standard for stubborn soft tissue. Releases the scar tissue and adhesions that keep you tight no matter how much you stretch.</p>
-            <a href="https://powerperformancechiro.janeapp.com/" target="_blank" rel="noopener" class="service-card-cta">Book ART</a>
-          </div>
-        </div>
-        <div class="service-card">
-          <div class="service-card-img"><img src="https://images.unsplash.com/photo-1599447421416-3414500d18a5?w=900&q=80" alt="Sports chiropractic adjustment"></div>
-          <div class="service-card-body">
-            <div class="service-card-title">Sports Chiropractic</div>
-            <p class="service-card-desc">Adjustments for athletes and weekend warriors. Restore joint motion, recover faster, and stop the cycle of flare-ups.</p>
-            <a href="https://powerperformancechiro.janeapp.com/" target="_blank" rel="noopener" class="service-card-cta">Book a Visit</a>
-          </div>
-        </div>
-        <div class="service-card">
-          <div class="service-card-img"><img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=900&q=80" alt="Functional rehab and movement coaching"></div>
-          <div class="service-card-body">
-            <div class="service-card-title">Functional Rehab</div>
-            <p class="service-card-desc">Custom rehab built around your sport and your week. The work between visits that makes the work in the office stick.</p>
-            <a href="https://powerperformancechiro.janeapp.com/" target="_blank" rel="noopener" class="service-card-cta">Get Started</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- REVIEWS -->
+  <!-- ============ REVIEWS ============ -->
   <section class="reviews reveal" id="reviews">
-    <div class="container">
+    <div class="wrap">
       <div class="reviews-head">
-        <div class="reviews-stars">
-          <span class="reviews-stars-icons">★★★★★</span>
-          <span class="reviews-stars-text"><strong>5.0</strong> · 22+ Google Reviews</span>
+        <div class="reviews-rating">
+          <span class="stars">★★★★★</span>
+          <span class="txt"><strong>5.0</strong> &middot; 22+ Google Reviews</span>
         </div>
-        <h2>Bend trusts Dr. Chandler.</h2>
-        <p>Real reviews from real Bend patients. The same people you're standing in line behind at Looney Bean.</p>
+        <h2 class="section-h">People are <span class="it">talking.</span></h2>
       </div>
       <div class="reviews-grid">
-        <div class="review-card">
-          <div class="review-card-stars">★★★★★</div>
-          <p class="review-card-body">"Hands-down the best chiropractor I've been to. Dr. Chandler actually listens, explains everything, and the treatment plan made a real difference. Highly recommend if you're active and dealing with pain."</p>
-          <div class="review-card-author">
-            <div class="review-card-avatar">JM</div>
-            <div class="review-card-meta">
-              <span class="review-card-name">Jessica M.</span>
-              <span class="review-card-detail">Bend, OR</span>
+        <article class="review">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-body">Hands down the best chiropractor I've been to. Dr. Chandler actually listens, explains everything, and the treatment plan made a real difference. Highly recommend if you're active and dealing with pain.</p>
+          <div class="review-meta">
+            <div class="review-avatar">JM</div>
+            <div>
+              <div class="review-name">Jessica M.</div>
+              <div class="review-loc">Bend, OR</div>
             </div>
           </div>
-        </div>
-        <div class="review-card">
-          <div class="review-card-stars">★★★★★</div>
-          <p class="review-card-body">"I came in barely able to swing a golf club without pain. After a few sessions of ART and the rehab work Chandler put together, I'm back to playing 18 without thinking about it. Worth every visit."</p>
-          <div class="review-card-author">
-            <div class="review-card-avatar">RT</div>
-            <div class="review-card-meta">
-              <span class="review-card-name">Ryan T.</span>
-              <span class="review-card-detail">Bend, OR</span>
+        </article>
+        <article class="review">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-body">I came in barely able to swing a golf club without pain. After a few sessions of ART and the rehab work Chandler put together, I'm back to playing 18 without thinking about it. Worth every visit.</p>
+          <div class="review-meta">
+            <div class="review-avatar">RT</div>
+            <div>
+              <div class="review-name">Ryan T.</div>
+              <div class="review-loc">Bend, OR</div>
             </div>
           </div>
-        </div>
-        <div class="review-card">
-          <div class="review-card-stars">★★★★★</div>
-          <p class="review-card-body">"Finally a chiro that treats the cause, not just the symptom. The full-body evaluation alone was worth it. I left understanding what was actually going on with my back for the first time."</p>
-          <div class="review-card-author">
-            <div class="review-card-avatar">SK</div>
-            <div class="review-card-meta">
-              <span class="review-card-name">Sarah K.</span>
-              <span class="review-card-detail">Bend, OR</span>
+        </article>
+        <article class="review">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-body">Finally a chiro that treats the cause, not just the symptom. The full body evaluation alone was worth it. I left understanding what was actually going on with my back for the first time.</p>
+          <div class="review-meta">
+            <div class="review-avatar">SK</div>
+            <div>
+              <div class="review-name">Sarah K.</div>
+              <div class="review-loc">Bend, OR</div>
             </div>
           </div>
-        </div>
+        </article>
       </div>
-      <div class="reviews-cta">
+      <div class="reviews-foot">
         <a href="https://www.google.com/search?q=Power+Performance+Chiropractic+Bend+Reviews" target="_blank" rel="noopener">Read all reviews on Google →</a>
       </div>
     </div>
   </section>
 
-  <!-- AREA / BEND LOCAL PROOF -->
+  <!-- ============ AREA ============ -->
   <section class="area reveal">
-    <div class="area-grid">
-      <div class="area-content">
-        <div class="eyebrow">Made for Bend</div>
-        <h2>We treat the people who make this town move.</h2>
-        <p>Trail runners off Phil's. Cyclists out the Cascade Lakes loop. Climbers at Smith Rock. Skiers, framers, parents, and weekend warriors who push their bodies and want to keep pushing them. If you live here and you love it, we built this practice for you.</p>
-        <div class="area-tags">
-          <span class="area-tag">Mt. Bachelor</span>
-          <span class="area-tag">Smith Rock</span>
-          <span class="area-tag">Phil's Trail</span>
-          <span class="area-tag">Cascade Lakes</span>
-          <span class="area-tag">Deschutes River</span>
-          <span class="area-tag">FootZone Runners</span>
-          <span class="area-tag">Bend Endurance</span>
-          <span class="area-tag">CORK Cyclists</span>
+    <div class="wrap">
+      <div class="area-grid">
+        <div class="area-img">
+          <img src="brand_assets/photos/bend-landscape.jpg" alt="Bend, Oregon Cascade mountains landscape">
         </div>
-      </div>
-      <div class="area-img">
-        <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=1000&q=80" alt="Cyclist riding through the Cascade mountains near Bend">
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq reveal">
-    <div class="container">
-      <div class="section-header">
-        <div class="eyebrow">FAQ</div>
-        <h2>Common Questions</h2>
-        <p>The stuff people ask before they book.</p>
-      </div>
-      <div class="faq-list">
-        <div class="faq-item">
-          <div class="faq-q">Is this a "crack-you-and-out-the-door" kind of place?</div>
-          <p class="faq-a">No. Every new patient gets a full-body evaluation first. We figure out what's actually driving the issue, then build a plan you can stick to. Adjustments are part of it, not the whole thing.</p>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">Do you take insurance?</div>
-          <p class="faq-a">We're out-of-network. We provide a superbill you can submit to your insurance for potential reimbursement. Most patients find the trade-off worth it for the time and the results.</p>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">How long until I feel better?</div>
-          <p class="faq-a">Most patients feel real change in the first 1&ndash;3 visits. Lasting results depend on the issue and how well you hold up your end of the rehab. We'll be honest about timelines after the eval.</p>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">I'm not really an athlete &mdash; is this still for me?</div>
-          <p class="faq-a">Yes. We treat framers, nurses, parents, anyone who works hard and wants to move better. "Performance" means whatever performance means for you.</p>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">Where are you located?</div>
-          <p class="faq-a">1725 SW Chandler Ave, Suite 102, Bend, OR 97702. Just off the parkway, near Old Mill. Easy parking.</p>
+        <div class="area-content">
+          <div class="eyebrow">What Life Looks Like</div>
+          <h2 class="section-h">Back to the things <span class="it">you actually love.</span></h2>
+          <p>The hike you stopped doing. The kid you can't keep up with anymore. The Saturday morning that doesn't start with three Advil. That's the version of you we're working toward.</p>
+          <p style="margin-top:14px;">Serving Bend, Redmond, Sisters, Sunriver, and the surrounding Central Oregon communities.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
+  <!-- ============ FAQ ============ -->
+  <section class="faq reveal" id="faq">
+    <div class="wrap">
+      <div class="faq-head">
+        <div>
+          <div class="eyebrow">Good Questions</div>
+          <h2 class="section-h">Before you <span class="it">book.</span></h2>
+        </div>
+        <p style="font-size:16px;color:var(--ink-mid);max-width:520px;">The stuff people usually want to know. If your question isn't here, call the office.</p>
+      </div>
+      <div class="faq-grid">
+        <details class="faq-item">
+          <summary>Is this a crack-you-and-out-the-door place? <span class="faq-toggle">+</span></summary>
+          <div class="faq-a">No. Every new patient gets a full-body movement evaluation first. We figure out what's actually driving the issue, then build a plan you can stick to. Adjustments are part of it, not the whole thing.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Do you take insurance? <span class="faq-toggle">+</span></summary>
+          <div class="faq-a">We're out of network. We provide a superbill you can submit to your insurance for potential reimbursement. Most patients find the trade-off worth it for the time and the results.</div>
+        </details>
+        <details class="faq-item">
+          <summary>How long until I feel better? <span class="faq-toggle">+</span></summary>
+          <div class="faq-a">Most patients feel real change in the first one to three visits. Lasting results depend on the issue and how well you hold up your end of the rehab. We'll be honest about timelines after the eval.</div>
+        </details>
+        <details class="faq-item">
+          <summary>I'm not really an athlete. Is this still for me? <span class="faq-toggle">+</span></summary>
+          <div class="faq-a">Yes. We treat framers, nurses, parents, anyone who works hard and wants to move better. "Performance" means whatever performance means for you.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Where are you located? <span class="faq-toggle">+</span></summary>
+          <div class="faq-a">1725 SW Chandler Ave, Suite 102, Bend, OR 97702. Just off the parkway, near Old Mill. Easy parking.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
   <section class="cta reveal">
-    <h2>Ready to get back to it?</h2>
-    <p>Book online in under a minute. We'll meet you where you are and build a plan from there.</p>
-    <a href="https://powerperformancechiro.janeapp.com/" target="_blank" rel="noopener" class="btn-dark">Book an Appointment</a>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <a href="/" class="footer-logo-link" aria-label="Power Performance Chiropractic home">
-          <img src="https://images.squarespace-cdn.com/content/v1/67869c6fdab56c582a307d44/d8148a6d-4eda-4d6b-8e66-7a6ddb53e4f8/PPC_Primary+Logo+CLR.png?format=1500w" alt="Power Performance Chiropractic" class="footer-logo">
-        </a>
-        <p class="footer-tagline">Performance-focused chiropractic care in Bend, OR. Built for the people who make this town move.</p>
-        <div class="footer-contact">
-          <a href="tel:+14586009345">(458) 600-9345</a>
-          <a href="mailto:info@powerperformancechiro.com">info@powerperformancechiro.com</a>
-          <span>1725 SW Chandler Ave, Suite 102 · Bend, OR 97702</span>
-        </div>
-      </div>
-      <div class="footer-nav-wrap">
-        <div class="footer-section">
-          <div class="footer-heading">Explore</div>
-          <a href="/" class="footer-link">Home</a>
-          <a href="#services" class="footer-link">Services</a>
-          <a href="#about" class="footer-link">About Dr. Chandler</a>
-          <a href="#reviews" class="footer-link">Reviews</a>
-        </div>
-        <div class="footer-section">
-          <div class="footer-heading">Hours</div>
-          <span class="footer-link">Mon · 9a&ndash;1p, 3&ndash;6p</span>
-          <span class="footer-link">Tue · 12&ndash;6p</span>
-          <span class="footer-link">Wed · 9a&ndash;1p, 3&ndash;6p</span>
-          <span class="footer-link">Thu · 9a&ndash;1p, 3&ndash;6p</span>
-          <span class="footer-link">Fri · 8a&ndash;12p</span>
-        </div>
+    <div class="wrap cta-inner">
+      <div class="eyebrow">Let's Get Started</div>
+      <h2>Feel better. <span class="it">Stay that way.</span></h2>
+      <p>Book online in under a minute. We'll take it from there.</p>
+      <div class="cta-actions">
+        <a href="https://powerperformancechiro.janeapp.com/" target="_blank" rel="noopener" class="btn-primary">Book an Appointment <span class="arrow">→</span></a>
+        <a href="tel:+14586009345" class="btn-ghost">(458) 600-9345</a>
       </div>
     </div>
-    <div class="footer-bar">
-      <span class="footer-copy">&copy; 2026 Power Performance Chiropractic. All rights reserved.</span>
-      <span class="footer-credit">Designed by <a href="https://hoffmediadesign.com" target="_blank" rel="noopener noreferrer">Hoffmedia</a></span>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="/" aria-label="Power Performance Chiropractic home" style="display:inline-block;line-height:0;">
+            <img src="brand_assets/ppc-logo.webp" alt="Power Performance Chiropractic" class="footer-logo" style="filter: brightness(0) invert(1); opacity: 0.95;">
+          </a>
+          <p class="footer-tagline">Performance-focused chiropractic for Central Oregon. Built for the people who make this place move.</p>
+          <div class="footer-contact">
+            <a href="tel:+14586009345">(458) 600-9345</a>
+            <a href="mailto:info@powerperformancechiro.com">info@powerperformancechiro.com</a>
+            <span>1725 SW Chandler Ave, Suite 102</span>
+            <span>Bend, OR 97702</span>
+          </div>
+        </div>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <div class="footer-h">Explore</div>
+            <a href="#about">About Dr. Chandler</a>
+            <a href="#services">Services</a>
+            <a href="#plan">How It Works</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#faq">FAQ</a>
+          </div>
+          <div class="footer-col">
+            <div class="footer-h">Hours</div>
+            <span>Mon &middot; 9a&ndash;1p, 3&ndash;6p</span>
+            <span>Tue &middot; 12&ndash;6p</span>
+            <span>Wed &middot; 9a&ndash;1p, 3&ndash;6p</span>
+            <span>Thu &middot; 9a&ndash;1p, 3&ndash;6p</span>
+            <span>Fri &middot; 8a&ndash;12p</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bar">
+        <span class="footer-copy">&copy; 2026 Power Performance Chiropractic. All rights reserved.</span>
+        <span class="footer-credit">Designed by <a href="https://hoffmediadesign.com" target="_blank" rel="noopener noreferrer">Hoffmedia</a></span>
+      </div>
     </div>
   </footer>
 
+  <!-- ============ MOBILE STICKY CTA ============ -->
+  <div class="sticky-cta">
+    <a href="tel:+14586009345" class="scta-phone">Call</a>
+    <a href="https://powerperformancechiro.janeapp.com/" target="_blank" rel="noopener" class="scta-book">Book Appointment →</a>
+  </div>
+
   <script>
-    const obs = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+    function openMenu(){document.getElementById('menu').classList.add('open');document.body.classList.add('menu-open');}
+    function closeMenu(){document.getElementById('menu').classList.remove('open');document.body.classList.remove('menu-open');}
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+    }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
   </script>
 
   <script type="application/ld+json">
@@ -690,12 +1162,12 @@
     "@type": "Chiropractor",
     "@id": "https://powerperformancechiro.com/#business",
     "name": "Power Performance Chiropractic",
-    "description": "Performance-focused chiropractic care in Bend, OR. ART, soft tissue, and rehab for athletes, active adults, and people who work with their hands.",
+    "description": "Sports chiropractic for Central Oregon athletes, active adults, and people who work with their hands. ART, soft tissue, cupping, and rehab.",
     "url": "https://powerperformancechiro.com/",
     "telephone": "+1-458-600-9345",
     "email": "info@powerperformancechiro.com",
-    "image": "https://images.squarespace-cdn.com/content/v1/67869c6fdab56c582a307d44/d8148a6d-4eda-4d6b-8e66-7a6ddb53e4f8/PPC_Primary+Logo+CLR.png?format=1500w",
-    "logo": "https://images.squarespace-cdn.com/content/v1/67869c6fdab56c582a307d44/d8148a6d-4eda-4d6b-8e66-7a6ddb53e4f8/PPC_Primary+Logo+CLR.png?format=1500w",
+    "image": "brand_assets/ppc-logo.webp",
+    "logo": "brand_assets/ppc-logo.webp",
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
@@ -727,9 +1199,8 @@
       "Active Release Technique",
       "FAKTR soft tissue protocol",
       "Functional rehabilitation",
-      "Athletic injury recovery",
-      "Movement-based care",
-      "Golf-specific care"
+      "Cupping therapy",
+      "Movement-based care"
     ]
   }
   </script>

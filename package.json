@@ -9,6 +9,6 @@
     "screenshot": "node screenshot.mjs"
   },
   "dependencies": {
-    "puppeteer": "^24.40.0"
+    "puppeteer": "^24.43.1"
   }
 }

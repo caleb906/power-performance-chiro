@@ -10,5 +10,11 @@ screencapture-*
 Brand Assets/
 brand_assets/*
 !brand_assets/README.md
+!brand_assets/ppc-logo.webp
+!brand_assets/ppc-brandmark-ko.webp
+!brand_assets/photos/
+!brand_assets/photos/*.jpg
+!brand_assets/photos/*.png
+!brand_assets/photos/*.webp
 
 .vercel
